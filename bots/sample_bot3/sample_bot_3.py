@@ -24,8 +24,6 @@ class SampleBot3(BotInterface):
     def decide(self, state):
         self_data = state["self"]
         opp_data = state["opponent"]
-        artifacts = state.get("artifacts", [])
-        minions = state.get("minions", [])
 
         self_pos = self_data["position"]
         opp_pos = opp_data["position"]
