@@ -11,12 +11,6 @@ from simulator.visualizer import Visualizer
 
 
 def run_tournament(headless: bool = False):
-    """Run a tournament with all bots from the bots folder.
-    Returns the winner bot instance and tournament statistics.
-
-    Args:
-        headless (bool): If True, run without visualization
-    """
     # Step 1: Find and load all bots
     bots = discover_bots()
     print(f"Found {len(bots)} bots for the tournament")
