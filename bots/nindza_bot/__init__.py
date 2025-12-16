@@ -1,3 +1,3 @@
-from nindza_bot.nindza_bot import NindzaBot
+from .nindza_bot import NindzaTigar
 
-__all__ = ["NindzaBot"]
+__all__ = ["NindzaTigar"]
