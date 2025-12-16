@@ -186,19 +186,26 @@ class ArchmageBot(BotInterface):
 
         # PRIORITY 1: EMERGENCY SURVIVAL (HP <= 35)
         if hp <= 35:
-            if not my_shielded and self.can_cast("shield", me):
-                return make_action(self.get_flee_move(my_pos, opp_pos, state), {"name": "shield"}, "emergency_shield")
+            # Prioritize heal if we have mana - much better than fleeing
             if self.can_cast("heal", me):
-                return make_action(self.get_flee_move(my_pos, opp_pos, state), {"name": "heal"}, "emergency_heal")
+                move = self.get_flee_move(my_pos, opp_pos, state) if dist <= 3 else [0, 0]
+                return make_action(move, {"name": "heal"}, "emergency_heal")
+            if not my_shielded and self.can_cast("shield", me):
+                move = self.get_flee_move(my_pos, opp_pos, state) if dist <= 3 else [0, 0]
+                return make_action(move, {"name": "shield"}, "emergency_shield")
             if self.can_cast("teleport", me) and artifacts:
                 health_arts = [a for a in artifacts if a["type"] == "health"]
                 if health_arts:
                     best = min(health_arts, key=lambda a: self.get_dist(my_pos, tuple(a["position"])))
                     return make_action([0, 0], {"name": "teleport", "target": best["position"]}, "emergency_teleport")
-            if dist <= 4 and self.can_cast("blink", me):
-                blink_dir = self.get_blink_away(my_pos, opp_pos, state)
-                return make_action([0, 0], {"name": "blink", "target": blink_dir}, "emergency_blink")
-            return make_action(self.get_flee_move(my_pos, opp_pos, state), None, "emergency_flee")
+            # Only flee/blink if close - if far, stay and wait for mana regen
+            if dist <= 3:
+                if self.can_cast("blink", me):
+                    blink_dir = self.get_blink_away(my_pos, opp_pos, state)
+                    return make_action([0, 0], {"name": "blink", "target": blink_dir}, "emergency_blink")
+                return make_action(self.get_flee_move(my_pos, opp_pos, state), None, "emergency_flee")
+            # If far and no spells, just wait for mana regen
+            return make_action([0, 0], None, "emergency_wait")
 
         # PRIORITY 2: KILL ENEMY MINION (adjacent, they deal 10 dmg/turn)
         for em in enemy_minions:
@@ -222,15 +229,19 @@ class ArchmageBot(BotInterface):
                 step = self.bfs_move(my_pos, opp_pos, state)
                 return make_action(step, {"name": "fireball", "target": target}, "fireball")
 
-        # PRIORITY 6: SUMMON MINION (no minion and enough mana)
-        if len(own_minions) == 0 and self.can_cast("summon", me) and mana >= 60:
+        # PRIORITY 6: HEAL when low HP (before summon - data shows summon at low HP has 41% win rate)
+        if hp <= 60 and self.can_cast("heal", me) and dist >= 3:
+            return make_action([0, 0], {"name": "heal"}, "heal_priority")
+
+        # PRIORITY 7: SUMMON MINION (no minion and enough mana and healthy)
+        if len(own_minions) == 0 and self.can_cast("summon", me) and mana >= 60 and hp >= 50:
             summon_pos = self.get_summon_position(my_pos, opp_pos, minions, state)
             if summon_pos:
                 return make_action([0, 0], {"name": "summon", "target": summon_pos}, "summon")
 
-        # PRIORITY 7: HEAL (when safe and need it, or to maintain HP advantage)
+        # PRIORITY 8: HEAL (when safe and need it, or to maintain HP advantage)
         if self.can_cast("heal", me):
-            if (hp <= 65 and dist >= 4) or (hp <= 80 and hp_advantage >= 20 and dist >= 3):
+            if (hp <= 70 and dist >= 4) or (hp <= 85 and hp_advantage >= 15 and dist >= 3):
                 return make_action([0, 0], {"name": "heal"}, "heal")
 
         # PRIORITY 8: RESOURCE COLLECTION
@@ -273,12 +284,16 @@ class ArchmageBot(BotInterface):
         elif dist > optimal + 1:
             return make_action(self.bfs_move(my_pos, opp_pos, state), None, "maintain_dist_close")
 
-        # PRIORITY 12: AVOID EDGES (reposition toward center)
-        if self.is_near_edge(my_pos, state):
+        # PRIORITY 12: BE AGGRESSIVE when healthy (data shows idle has 57% win rate - too passive)
+        if hp >= 70 and mana >= 40 and dist > 2:
+            return make_action(self.bfs_move(my_pos, opp_pos, state), None, "aggressive_approach")
+
+        # PRIORITY 13: AVOID EDGES (only when not in combat range)
+        if self.is_near_edge(my_pos, state) and dist > 5:
             center = (4, 4)
             return make_action(self.bfs_move(my_pos, center, state), None, "avoid_edge")
 
-        # PRIORITY 13: Q-LEARNING EXPLORATION (epsilon-greedy)
+        # PRIORITY 14: Q-LEARNING EXPLORATION (epsilon-greedy)
         if random.random() < self.EPSILON and self._turn_count > 5:
             explore_actions = []
             if self.can_cast("fireball", me) and dist <= 5:
