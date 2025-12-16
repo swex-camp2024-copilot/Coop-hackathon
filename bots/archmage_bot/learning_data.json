@@ -1,0 +1,789 @@
+{
+  "games": 50,
+  "wins": 44,
+  "situation_actions": {
+    "ok_ok_ok_far": {
+      "first_shield": {
+        "count": 1,
+        "wins": 1
+      },
+      "summon": {
+        "count": 87,
+        "wins": 73
+      },
+      "blink_artifact": {
+        "count": 30,
+        "wins": 25
+      },
+      "hunt_blink": {
+        "count": 169,
+        "wins": 126
+      },
+      "move_artifact": {
+        "count": 117,
+        "wins": 89
+      },
+      "hunt_move": {
+        "count": 91,
+        "wins": 64
+      },
+      "teleport_artifact": {
+        "count": 32,
+        "wins": 31
+      },
+      "kill_minion": {
+        "count": 8,
+        "wins": 6
+      }
+    },
+    "ok_ok_ok_close": {
+      "maintain_dist_back": {
+        "count": 19,
+        "wins": 12
+      },
+      "avoid_edge": {
+        "count": 1,
+        "wins": 1
+      },
+      "melee_opp": {
+        "count": 14,
+        "wins": 14
+      },
+      "fireball": {
+        "count": 42,
+        "wins": 34
+      },
+      "blink_artifact": {
+        "count": 23,
+        "wins": 21
+      },
+      "summon": {
+        "count": 15,
+        "wins": 12
+      },
+      "move_artifact": {
+        "count": 39,
+        "wins": 30
+      },
+      "teleport_artifact": {
+        "count": 3,
+        "wins": 2
+      },
+      "kill_minion": {
+        "count": 37,
+        "wins": 33
+      },
+      "aggressive_blink": {
+        "count": 7,
+        "wins": 7
+      },
+      "idle": {
+        "count": 5,
+        "wins": 2
+      }
+    },
+    "ok_ok_low_close": {
+      "fireball": {
+        "count": 48,
+        "wins": 45
+      },
+      "melee_opp": {
+        "count": 24,
+        "wins": 24
+      },
+      "blink_artifact": {
+        "count": 6,
+        "wins": 6
+      },
+      "kill_minion": {
+        "count": 16,
+        "wins": 14
+      },
+      "teleport_artifact": {
+        "count": 2,
+        "wins": 2
+      },
+      "summon": {
+        "count": 6,
+        "wins": 6
+      },
+      "heal": {
+        "count": 3,
+        "wins": 3
+      },
+      "move_artifact": {
+        "count": 8,
+        "wins": 8
+      },
+      "aggressive_blink": {
+        "count": 1,
+        "wins": 1
+      },
+      "maintain_dist_back": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "ok_ok_ok_mid": {
+      "kill_minion": {
+        "count": 49,
+        "wins": 42
+      },
+      "fireball": {
+        "count": 92,
+        "wins": 75
+      },
+      "summon": {
+        "count": 102,
+        "wins": 58
+      },
+      "idle": {
+        "count": 271,
+        "wins": 165
+      },
+      "move_artifact": {
+        "count": 147,
+        "wins": 85
+      },
+      "teleport_artifact": {
+        "count": 11,
+        "wins": 11
+      },
+      "blink_artifact": {
+        "count": 42,
+        "wins": 28
+      },
+      "avoid_edge": {
+        "count": 45,
+        "wins": 19
+      },
+      "heal": {
+        "count": 5,
+        "wins": 3
+      }
+    },
+    "ok_low_ok_mid": {
+      "move_artifact": {
+        "count": 55,
+        "wins": 46
+      },
+      "fireball": {
+        "count": 25,
+        "wins": 25
+      },
+      "blink_artifact": {
+        "count": 21,
+        "wins": 17
+      },
+      "kill_minion": {
+        "count": 24,
+        "wins": 18
+      },
+      "teleport_artifact": {
+        "count": 9,
+        "wins": 8
+      },
+      "heal": {
+        "count": 1,
+        "wins": 1
+      },
+      "proactive_shield": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "ok_low_ok_close": {
+      "move_artifact": {
+        "count": 39,
+        "wins": 32
+      },
+      "blink_artifact": {
+        "count": 32,
+        "wins": 29
+      },
+      "kill_minion": {
+        "count": 42,
+        "wins": 36
+      },
+      "teleport_artifact": {
+        "count": 11,
+        "wins": 10
+      },
+      "fireball": {
+        "count": 16,
+        "wins": 12
+      },
+      "heal": {
+        "count": 3,
+        "wins": 3
+      },
+      "melee_opp": {
+        "count": 3,
+        "wins": 2
+      },
+      "maintain_dist_back": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "ok_low_low_close": {
+      "fireball": {
+        "count": 28,
+        "wins": 27
+      },
+      "blink_artifact": {
+        "count": 28,
+        "wins": 25
+      },
+      "teleport_artifact": {
+        "count": 6,
+        "wins": 6
+      },
+      "move_artifact": {
+        "count": 55,
+        "wins": 51
+      },
+      "kill_minion": {
+        "count": 11,
+        "wins": 11
+      },
+      "melee_opp": {
+        "count": 18,
+        "wins": 18
+      },
+      "heal": {
+        "count": 6,
+        "wins": 6
+      }
+    },
+    "ok_low_low_mid": {
+      "move_artifact": {
+        "count": 30,
+        "wins": 26
+      },
+      "fireball": {
+        "count": 29,
+        "wins": 27
+      },
+      "heal": {
+        "count": 3,
+        "wins": 3
+      },
+      "teleport_artifact": {
+        "count": 2,
+        "wins": 2
+      },
+      "blink_artifact": {
+        "count": 8,
+        "wins": 8
+      },
+      "kill_minion": {
+        "count": 1,
+        "wins": 0
+      }
+    },
+    "ok_ok_low_mid": {
+      "summon": {
+        "count": 3,
+        "wins": 3
+      },
+      "fireball": {
+        "count": 35,
+        "wins": 33
+      },
+      "move_artifact": {
+        "count": 4,
+        "wins": 4
+      },
+      "kill_minion": {
+        "count": 1,
+        "wins": 1
+      },
+      "blink_artifact": {
+        "count": 1,
+        "wins": 1
+      },
+      "aggressive_blink": {
+        "count": 3,
+        "wins": 3
+      },
+      "heal": {
+        "count": 2,
+        "wins": 2
+      }
+    },
+    "ok_low_ok_far": {
+      "blink_artifact": {
+        "count": 14,
+        "wins": 10
+      },
+      "move_artifact": {
+        "count": 25,
+        "wins": 18
+      },
+      "teleport_artifact": {
+        "count": 11,
+        "wins": 10
+      },
+      "aggressive_hunt": {
+        "count": 1,
+        "wins": 1
+      },
+      "hunt_blink": {
+        "count": 1,
+        "wins": 1
+      },
+      "kill_minion": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "low_low_low_close": {
+      "kill_minion": {
+        "count": 12,
+        "wins": 12
+      },
+      "proactive_shield": {
+        "count": 4,
+        "wins": 4
+      },
+      "teleport_artifact": {
+        "count": 3,
+        "wins": 3
+      },
+      "move_artifact": {
+        "count": 17,
+        "wins": 17
+      },
+      "blink_artifact": {
+        "count": 10,
+        "wins": 10
+      },
+      "heal": {
+        "count": 2,
+        "wins": 2
+      },
+      "fireball": {
+        "count": 8,
+        "wins": 8
+      },
+      "emergency_teleport": {
+        "count": 1,
+        "wins": 1
+      },
+      "melee_opp": {
+        "count": 10,
+        "wins": 10
+      }
+    },
+    "low_ok_low_far": {
+      "heal": {
+        "count": 2,
+        "wins": 2
+      },
+      "kill_minion": {
+        "count": 2,
+        "wins": 2
+      },
+      "teleport_artifact": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "ok_low_low_far": {
+      "blink_artifact": {
+        "count": 9,
+        "wins": 9
+      },
+      "move_artifact": {
+        "count": 15,
+        "wins": 15
+      },
+      "heal": {
+        "count": 2,
+        "wins": 2
+      },
+      "teleport_artifact": {
+        "count": 2,
+        "wins": 1
+      }
+    },
+    "ok_ok_low_far": {
+      "heal": {
+        "count": 4,
+        "wins": 4
+      },
+      "blink_artifact": {
+        "count": 4,
+        "wins": 4
+      },
+      "move_artifact": {
+        "count": 7,
+        "wins": 7
+      },
+      "summon": {
+        "count": 6,
+        "wins": 5
+      },
+      "aggressive_blink": {
+        "count": 7,
+        "wins": 7
+      },
+      "aggressive_hunt": {
+        "count": 8,
+        "wins": 8
+      }
+    },
+    "low_ok_ok_close": {
+      "kill_minion": {
+        "count": 13,
+        "wins": 12
+      },
+      "blink_artifact": {
+        "count": 14,
+        "wins": 12
+      },
+      "move_artifact": {
+        "count": 19,
+        "wins": 16
+      },
+      "summon": {
+        "count": 6,
+        "wins": 4
+      },
+      "proactive_shield": {
+        "count": 9,
+        "wins": 8
+      },
+      "teleport_artifact": {
+        "count": 3,
+        "wins": 3
+      },
+      "fireball": {
+        "count": 2,
+        "wins": 2
+      }
+    },
+    "crit_ok_ok_close": {
+      "emergency_shield": {
+        "count": 3,
+        "wins": 3
+      },
+      "emergency_heal": {
+        "count": 2,
+        "wins": 2
+      }
+    },
+    "crit_ok_ok_mid": {
+      "emergency_heal": {
+        "count": 2,
+        "wins": 2
+      }
+    },
+    "low_ok_ok_mid": {
+      "blink_artifact": {
+        "count": 3,
+        "wins": 3
+      },
+      "teleport_artifact": {
+        "count": 2,
+        "wins": 2
+      },
+      "proactive_shield": {
+        "count": 20,
+        "wins": 18
+      },
+      "kill_minion": {
+        "count": 7,
+        "wins": 7
+      },
+      "heal": {
+        "count": 22,
+        "wins": 19
+      },
+      "fireball": {
+        "count": 7,
+        "wins": 6
+      },
+      "summon": {
+        "count": 2,
+        "wins": 2
+      },
+      "move_artifact": {
+        "count": 6,
+        "wins": 4
+      },
+      "emergency_heal": {
+        "count": 1,
+        "wins": 1
+      },
+      "emergency_shield": {
+        "count": 1,
+        "wins": 0
+      }
+    },
+    "low_low_ok_far": {
+      "kill_minion": {
+        "count": 4,
+        "wins": 4
+      },
+      "heal": {
+        "count": 5,
+        "wins": 3
+      },
+      "blink_artifact": {
+        "count": 3,
+        "wins": 2
+      },
+      "move_artifact": {
+        "count": 3,
+        "wins": 1
+      },
+      "emergency_flee": {
+        "count": 3,
+        "wins": 3
+      },
+      "emergency_heal": {
+        "count": 2,
+        "wins": 1
+      },
+      "teleport_artifact": {
+        "count": 1,
+        "wins": 0
+      }
+    },
+    "low_ok_ok_far": {
+      "heal": {
+        "count": 2,
+        "wins": 2
+      },
+      "kill_minion": {
+        "count": 2,
+        "wins": 2
+      },
+      "emergency_teleport": {
+        "count": 1,
+        "wins": 1
+      },
+      "move_artifact": {
+        "count": 1,
+        "wins": 1
+      },
+      "summon": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "low_low_ok_close": {
+      "blink_artifact": {
+        "count": 6,
+        "wins": 4
+      },
+      "kill_minion": {
+        "count": 10,
+        "wins": 10
+      },
+      "proactive_shield": {
+        "count": 6,
+        "wins": 4
+      },
+      "teleport_artifact": {
+        "count": 3,
+        "wins": 2
+      },
+      "move_artifact": {
+        "count": 4,
+        "wins": 3
+      },
+      "melee_opp": {
+        "count": 3,
+        "wins": 1
+      },
+      "emergency_shield": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "low_ok_low_close": {
+      "kill_minion": {
+        "count": 6,
+        "wins": 6
+      },
+      "move_artifact": {
+        "count": 3,
+        "wins": 3
+      },
+      "summon": {
+        "count": 2,
+        "wins": 2
+      },
+      "teleport_artifact": {
+        "count": 3,
+        "wins": 3
+      },
+      "fireball": {
+        "count": 8,
+        "wins": 8
+      },
+      "proactive_shield": {
+        "count": 6,
+        "wins": 6
+      },
+      "blink_artifact": {
+        "count": 1,
+        "wins": 1
+      },
+      "melee_opp": {
+        "count": 24,
+        "wins": 24
+      }
+    },
+    "crit_ok_low_close": {
+      "emergency_heal": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "low_ok_low_mid": {
+      "kill_minion": {
+        "count": 3,
+        "wins": 2
+      },
+      "fireball": {
+        "count": 1,
+        "wins": 1
+      },
+      "heal": {
+        "count": 4,
+        "wins": 3
+      },
+      "summon": {
+        "count": 1,
+        "wins": 1
+      },
+      "proactive_shield": {
+        "count": 1,
+        "wins": 0
+      }
+    },
+    "low_low_low_mid": {
+      "fireball": {
+        "count": 4,
+        "wins": 4
+      },
+      "blink_artifact": {
+        "count": 1,
+        "wins": 1
+      },
+      "move_artifact": {
+        "count": 3,
+        "wins": 3
+      },
+      "heal": {
+        "count": 1,
+        "wins": 1
+      },
+      "teleport_artifact": {
+        "count": 1,
+        "wins": 1
+      },
+      "kill_minion": {
+        "count": 1,
+        "wins": 0
+      }
+    },
+    "low_low_ok_mid": {
+      "kill_minion": {
+        "count": 2,
+        "wins": 2
+      },
+      "teleport_artifact": {
+        "count": 1,
+        "wins": 1
+      },
+      "heal": {
+        "count": 4,
+        "wins": 3
+      },
+      "proactive_shield": {
+        "count": 1,
+        "wins": 1
+      },
+      "move_artifact": {
+        "count": 1,
+        "wins": 1
+      },
+      "emergency_blink": {
+        "count": 1,
+        "wins": 1
+      },
+      "emergency_flee": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "crit_low_ok_close": {
+      "emergency_heal": {
+        "count": 2,
+        "wins": 2
+      },
+      "emergency_teleport": {
+        "count": 1,
+        "wins": 1
+      },
+      "emergency_blink": {
+        "count": 1,
+        "wins": 1
+      },
+      "emergency_shield": {
+        "count": 1,
+        "wins": 0
+      }
+    },
+    "low_low_low_far": {
+      "heal": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "crit_low_low_close": {
+      "emergency_shield": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "crit_low_low_mid": {
+      "emergency_heal": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "crit_low_low_far": {
+      "emergency_flee": {
+        "count": 3,
+        "wins": 3
+      },
+      "emergency_teleport": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "crit_ok_low_far": {
+      "emergency_heal": {
+        "count": 1,
+        "wins": 1
+      }
+    },
+    "crit_low_ok_far": {
+      "emergency_heal": {
+        "count": 1,
+        "wins": 1
+      },
+      "emergency_teleport": {
+        "count": 1,
+        "wins": 1
+      }
+    }
+  },
+  "opponent_tendencies": {}
+}

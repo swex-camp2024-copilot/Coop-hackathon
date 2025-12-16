@@ -1,19 +1,94 @@
 from typing import List, Dict, Any, Tuple, Optional
 from collections import deque
+import json
+import os
 
 from bots.bot_interface import BotInterface
 
 
 class ArchmageBot(BotInterface):
+    LEARNING_FILE = "bots/archmage_bot/learning_data.json"
+
     def __init__(self) -> None:
         self.name_ = "Archmage"
         self._first_turn = True
         self._turn_count = 0
         self._last_hp = 100
+        self._last_opp_hp = 100
+        self._game_history: List[Dict[str, Any]] = []
+        self._learning_data = self._load_learning()
+        self._opponent_patterns: Dict[str, int] = {}
 
     @property
     def name(self) -> str:
         return self.name_
+
+    def _load_learning(self) -> Dict[str, Any]:
+        if os.path.exists(self.LEARNING_FILE):
+            try:
+                with open(self.LEARNING_FILE, "r") as f:
+                    return json.load(f)
+            except Exception:
+                pass
+        return {
+            "games": 0,
+            "wins": 0,
+            "situation_actions": {},
+            "opponent_tendencies": {},
+        }
+
+    def _save_learning(self) -> None:
+        try:
+            os.makedirs(os.path.dirname(self.LEARNING_FILE), exist_ok=True)
+            with open(self.LEARNING_FILE, "w") as f:
+                json.dump(self._learning_data, f, indent=2)
+        except Exception:
+            pass
+
+    def _get_situation_key(self, hp: int, mana: int, opp_hp: int, dist: int) -> str:
+        hp_cat = "crit" if hp <= 30 else ("low" if hp <= 60 else "ok")
+        mana_cat = "low" if mana <= 40 else "ok"
+        opp_cat = "low" if opp_hp <= 50 else "ok"
+        dist_cat = "close" if dist <= 3 else ("mid" if dist <= 5 else "far")
+        return f"{hp_cat}_{mana_cat}_{opp_cat}_{dist_cat}"
+
+    def _record_action(self, situation: str, action_name: str, hp: int, opp_hp: int) -> None:
+        self._game_history.append({
+            "situation": situation,
+            "action": action_name,
+            "hp": hp,
+            "opp_hp": opp_hp,
+        })
+
+    def _get_action_score(self, situation: str, action_name: str) -> float:
+        sa = self._learning_data.get("situation_actions", {})
+        if situation in sa and action_name in sa[situation]:
+            data = sa[situation][action_name]
+            if data["count"] > 0:
+                win_rate = data["wins"] / data["count"]
+                confidence = min(data["count"] / 20.0, 1.0)
+                return (win_rate - 0.5) * 10 * confidence
+        return 0.0
+
+    def game_over(self, won: bool) -> None:
+        self._learning_data["games"] = self._learning_data.get("games", 0) + 1
+        if won:
+            self._learning_data["wins"] = self._learning_data.get("wins", 0) + 1
+
+        sa = self._learning_data.setdefault("situation_actions", {})
+        for record in self._game_history:
+            sit = record["situation"]
+            act = record["action"]
+            if sit not in sa:
+                sa[sit] = {}
+            if act not in sa[sit]:
+                sa[sit][act] = {"count": 0, "wins": 0}
+            sa[sit][act]["count"] += 1
+            if won:
+                sa[sit][act]["wins"] += 1
+
+        self._game_history = []
+        self._save_learning()
 
     def decide(self, state: Dict[str, Any]) -> Dict[str, Any]:
         me = state["self"]
@@ -32,65 +107,73 @@ class ArchmageBot(BotInterface):
 
         self._turn_count += 1
         damage_taken = max(0, self._last_hp - hp)
+        opp_damage_taken = max(0, self._last_opp_hp - opp_hp)
         self._last_hp = hp
+        self._last_opp_hp = opp_hp
 
         own_minions = [m for m in minions if m["owner"] == me.get("name", self.name_)]
         enemy_minions = [m for m in minions if m["owner"] != me.get("name", self.name_)]
         hp_advantage = hp - opp_hp
 
+        situation = self._get_situation_key(hp, mana, opp_hp, dist)
+
+        def make_action(move: List[int], spell: Optional[Dict[str, Any]], action_name: str) -> Dict[str, Any]:
+            self._record_action(situation, action_name, hp, opp_hp)
+            return {"move": move, "spell": spell}
+
         # PRIORITY 0: FIRST-TURN SHIELD
         if self._first_turn:
             self._first_turn = False
             if self.can_cast("shield", me):
-                return {"move": [0, 0], "spell": {"name": "shield"}}
+                return make_action([0, 0], {"name": "shield"}, "first_shield")
 
         # PRIORITY 1: EMERGENCY SURVIVAL (HP <= 35)
         if hp <= 35:
             if not my_shielded and self.can_cast("shield", me):
-                return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": {"name": "shield"}}
+                return make_action(self.get_flee_move(my_pos, opp_pos, state), {"name": "shield"}, "emergency_shield")
             if self.can_cast("heal", me):
-                return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": {"name": "heal"}}
+                return make_action(self.get_flee_move(my_pos, opp_pos, state), {"name": "heal"}, "emergency_heal")
             if self.can_cast("teleport", me) and artifacts:
                 health_arts = [a for a in artifacts if a["type"] == "health"]
                 if health_arts:
                     best = min(health_arts, key=lambda a: self.get_dist(my_pos, tuple(a["position"])))
-                    return {"move": [0, 0], "spell": {"name": "teleport", "target": best["position"]}}
+                    return make_action([0, 0], {"name": "teleport", "target": best["position"]}, "emergency_teleport")
             if dist <= 4 and self.can_cast("blink", me):
                 blink_dir = self.get_blink_away(my_pos, opp_pos, state)
-                return {"move": [0, 0], "spell": {"name": "blink", "target": blink_dir}}
-            return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": None}
+                return make_action([0, 0], {"name": "blink", "target": blink_dir}, "emergency_blink")
+            return make_action(self.get_flee_move(my_pos, opp_pos, state), None, "emergency_flee")
 
         # PRIORITY 2: KILL ENEMY MINION (adjacent, they deal 10 dmg/turn)
         for em in enemy_minions:
             em_pos = tuple(em["position"])
             if self.manhattan_dist(my_pos, em_pos) == 1 and cooldowns.get("melee_attack", 0) == 0:
-                return {"move": [0, 0], "spell": {"name": "melee_attack", "target": list(em_pos)}}
+                return make_action([0, 0], {"name": "melee_attack", "target": list(em_pos)}, "kill_minion")
 
         # PRIORITY 3: PROACTIVE SHIELD (HP <= 55 and enemy close, or taking damage)
         if not my_shielded and self.can_cast("shield", me):
             if (hp <= 55 and dist <= 5) or (damage_taken >= 15):
-                return {"move": [0, 0], "spell": {"name": "shield"}}
+                return make_action([0, 0], {"name": "shield"}, "proactive_shield")
 
         # PRIORITY 4: MELEE ATTACK OPPONENT (adjacent, free damage)
         if self.manhattan_dist(my_pos, opp_pos) == 1 and cooldowns.get("melee_attack", 0) == 0:
-            return {"move": [0, 0], "spell": {"name": "melee_attack", "target": list(opp_pos)}}
+            return make_action([0, 0], {"name": "melee_attack", "target": list(opp_pos)}, "melee_opp")
 
         # PRIORITY 5: FIREBALL (in range - even if shielded when we have HP advantage)
         if dist <= 5 and self.can_cast("fireball", me):
             if not opp_shielded or hp_advantage >= 20:
                 step = self.bfs_move(my_pos, opp_pos, state)
-                return {"move": step, "spell": {"name": "fireball", "target": list(opp_pos)}}
+                return make_action(step, {"name": "fireball", "target": list(opp_pos)}, "fireball")
 
         # PRIORITY 6: SUMMON MINION (no minion and enough mana)
         if len(own_minions) == 0 and self.can_cast("summon", me) and mana >= 60:
             summon_pos = self.get_summon_position(my_pos, opp_pos, minions, state)
             if summon_pos:
-                return {"move": [0, 0], "spell": {"name": "summon", "target": summon_pos}}
+                return make_action([0, 0], {"name": "summon", "target": summon_pos}, "summon")
 
         # PRIORITY 7: HEAL (when safe and need it, or to maintain HP advantage)
         if self.can_cast("heal", me):
             if (hp <= 65 and dist >= 4) or (hp <= 80 and hp_advantage >= 20 and dist >= 3):
-                return {"move": [0, 0], "spell": {"name": "heal"}}
+                return make_action([0, 0], {"name": "heal"}, "heal")
 
         # PRIORITY 8: RESOURCE COLLECTION
         target_pos: Optional[Tuple[int, int]] = None
@@ -104,40 +187,40 @@ class ArchmageBot(BotInterface):
         if target_pos:
             art_dist = self.get_dist(my_pos, target_pos)
             if art_dist >= 5 and self.can_cast("teleport", me):
-                return {"move": [0, 0], "spell": {"name": "teleport", "target": list(target_pos)}}
+                return make_action([0, 0], {"name": "teleport", "target": list(target_pos)}, "teleport_artifact")
             if art_dist >= 3 and self.can_cast("blink", me):
                 blink_dir = self.get_blink_toward(my_pos, target_pos, state)
-                return {"move": [0, 0], "spell": {"name": "blink", "target": blink_dir}}
+                return make_action([0, 0], {"name": "blink", "target": blink_dir}, "blink_artifact")
             move = self.bfs_move(my_pos, target_pos, state)
-            return {"move": move, "spell": None}
+            return make_action(move, None, "move_artifact")
 
         # PRIORITY 9: AGGRESSIVE HUNT (when HP advantage)
         if hp_advantage >= 25 and dist > 2:
             if self.can_cast("blink", me):
                 blink_dir = self.get_blink_toward(my_pos, opp_pos, state)
-                return {"move": [0, 0], "spell": {"name": "blink", "target": blink_dir}}
-            return {"move": self.bfs_move(my_pos, opp_pos, state), "spell": None}
+                return make_action([0, 0], {"name": "blink", "target": blink_dir}, "aggressive_blink")
+            return make_action(self.bfs_move(my_pos, opp_pos, state), None, "aggressive_hunt")
 
         # PRIORITY 10: HUNT OPPONENT (close gap for fireball)
         if dist > 5:
             if self.can_cast("blink", me):
                 blink_dir = self.get_blink_toward(my_pos, opp_pos, state)
-                return {"move": [0, 0], "spell": {"name": "blink", "target": blink_dir}}
-            return {"move": self.bfs_move(my_pos, opp_pos, state), "spell": None}
+                return make_action([0, 0], {"name": "blink", "target": blink_dir}, "hunt_blink")
+            return make_action(self.bfs_move(my_pos, opp_pos, state), None, "hunt_move")
 
         # PRIORITY 11: MAINTAIN OPTIMAL DISTANCE (4-5 for fireball range)
         optimal = 4 if hp_advantage >= 10 else 5
         if dist < optimal - 1:
-            return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": None}
+            return make_action(self.get_flee_move(my_pos, opp_pos, state), None, "maintain_dist_back")
         elif dist > optimal + 1:
-            return {"move": self.bfs_move(my_pos, opp_pos, state), "spell": None}
+            return make_action(self.bfs_move(my_pos, opp_pos, state), None, "maintain_dist_close")
 
         # PRIORITY 12: AVOID EDGES (reposition toward center)
         if self.is_near_edge(my_pos, state):
             center = (4, 4)
-            return {"move": self.bfs_move(my_pos, center, state), "spell": None}
+            return make_action(self.bfs_move(my_pos, center, state), None, "avoid_edge")
 
-        return {"move": [0, 0], "spell": None}
+        return make_action([0, 0], None, "idle")
 
     # --- HELPERS ---
 

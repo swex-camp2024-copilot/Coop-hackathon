@@ -274,12 +274,24 @@ def run_single_match(
         if winner == bot1:
             stats["bot1_wins"] += 1
             match_results.append('bot1')
+            if hasattr(bot1, 'game_over'):
+                bot1.game_over(True)
+            if hasattr(bot2, 'game_over'):
+                bot2.game_over(False)
         elif winner == bot2:
             stats["bot2_wins"] += 1
             match_results.append('bot2')
+            if hasattr(bot1, 'game_over'):
+                bot1.game_over(False)
+            if hasattr(bot2, 'game_over'):
+                bot2.game_over(True)
         else:
             stats["draws"] += 1
             match_results.append('draw')
+            if hasattr(bot1, 'game_over'):
+                bot1.game_over(False)
+            if hasattr(bot2, 'game_over'):
+                bot2.game_over(False)
 
         # Only visualize if not headless and (single match or last match in a series)
         if not headless and (count == 1 or (match_num == count and count <= 5)):
