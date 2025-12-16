@@ -9,6 +9,7 @@ class ArchmageBot(BotInterface):
         self.name_ = "Archmage"
         self._first_turn = True
         self._turn_count = 0
+        self._last_hp = 100
 
     @property
     def name(self) -> str:
@@ -24,11 +25,18 @@ class ArchmageBot(BotInterface):
         cooldowns = me.get("cooldowns", {})
         hp = me["hp"]
         mana = me["mana"]
+        opp_hp = opp["hp"]
         dist = self.get_dist(my_pos, opp_pos)
         opp_shielded = opp.get("shield_active", False)
         my_shielded = me.get("shield_active", False)
 
         self._turn_count += 1
+        damage_taken = max(0, self._last_hp - hp)
+        self._last_hp = hp
+
+        own_minions = [m for m in minions if m["owner"] == me.get("name", self.name_)]
+        enemy_minions = [m for m in minions if m["owner"] != me.get("name", self.name_)]
+        hp_advantage = hp - opp_hp
 
         # PRIORITY 0: FIRST-TURN SHIELD
         if self._first_turn:
@@ -36,80 +44,98 @@ class ArchmageBot(BotInterface):
             if self.can_cast("shield", me):
                 return {"move": [0, 0], "spell": {"name": "shield"}}
 
-        # PRIORITY 1: EMERGENCY SURVIVAL (HP <= 40)
-        if hp <= 40:
-            spell = None
+        # PRIORITY 1: EMERGENCY SURVIVAL (HP <= 35)
+        if hp <= 35:
             if not my_shielded and self.can_cast("shield", me):
-                spell = {"name": "shield"}
-            elif self.can_cast("heal", me):
-                spell = {"name": "heal"}
-            elif hp <= 30 and self.can_cast("teleport", me) and artifacts:
+                return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": {"name": "shield"}}
+            if self.can_cast("heal", me):
+                return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": {"name": "heal"}}
+            if self.can_cast("teleport", me) and artifacts:
                 health_arts = [a for a in artifacts if a["type"] == "health"]
                 if health_arts:
                     best = min(health_arts, key=lambda a: self.get_dist(my_pos, tuple(a["position"])))
                     return {"move": [0, 0], "spell": {"name": "teleport", "target": best["position"]}}
-            if dist <= 3 and self.can_cast("blink", me):
+            if dist <= 4 and self.can_cast("blink", me):
                 blink_dir = self.get_blink_away(my_pos, opp_pos, state)
                 return {"move": [0, 0], "spell": {"name": "blink", "target": blink_dir}}
-            return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": spell}
+            return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": None}
 
-        # PRIORITY 2: PROACTIVE SHIELD (HP <= 60 and enemy close)
-        if hp <= 60 and dist <= 5 and not my_shielded and self.can_cast("shield", me):
-            return {"move": [0, 0], "spell": {"name": "shield"}}
+        # PRIORITY 2: KILL ENEMY MINION (adjacent, they deal 10 dmg/turn)
+        for em in enemy_minions:
+            em_pos = tuple(em["position"])
+            if self.manhattan_dist(my_pos, em_pos) == 1 and cooldowns.get("melee_attack", 0) == 0:
+                return {"move": [0, 0], "spell": {"name": "melee_attack", "target": list(em_pos)}}
 
-        # PRIORITY 3: MELEE ATTACK (adjacent, free damage)
+        # PRIORITY 3: PROACTIVE SHIELD (HP <= 55 and enemy close, or taking damage)
+        if not my_shielded and self.can_cast("shield", me):
+            if (hp <= 55 and dist <= 5) or (damage_taken >= 15):
+                return {"move": [0, 0], "spell": {"name": "shield"}}
+
+        # PRIORITY 4: MELEE ATTACK OPPONENT (adjacent, free damage)
         if self.manhattan_dist(my_pos, opp_pos) == 1 and cooldowns.get("melee_attack", 0) == 0:
             return {"move": [0, 0], "spell": {"name": "melee_attack", "target": list(opp_pos)}}
 
-        # PRIORITY 4: FIREBALL (in range, opponent not shielded)
-        if dist <= 5 and not opp_shielded and self.can_cast("fireball", me):
-            step = self.bfs_move(my_pos, opp_pos, state)
-            return {"move": step, "spell": {"name": "fireball", "target": list(opp_pos)}}
+        # PRIORITY 5: FIREBALL (in range - even if shielded when we have HP advantage)
+        if dist <= 5 and self.can_cast("fireball", me):
+            if not opp_shielded or hp_advantage >= 20:
+                step = self.bfs_move(my_pos, opp_pos, state)
+                return {"move": step, "spell": {"name": "fireball", "target": list(opp_pos)}}
 
-        # PRIORITY 5: SUMMON MINION (early game or no minion)
-        own_minions = [m for m in minions if m["owner"] == me.get("name", self.name_)]
-        if len(own_minions) == 0 and self.can_cast("summon", me):
+        # PRIORITY 6: SUMMON MINION (no minion and enough mana)
+        if len(own_minions) == 0 and self.can_cast("summon", me) and mana >= 60:
             summon_pos = self.get_summon_position(my_pos, opp_pos, minions, state)
             if summon_pos:
                 return {"move": [0, 0], "spell": {"name": "summon", "target": summon_pos}}
 
-        # PRIORITY 6: HEAL (moderate damage, safe distance)
-        if hp <= 70 and dist >= 4 and self.can_cast("heal", me):
-            return {"move": [0, 0], "spell": {"name": "heal"}}
+        # PRIORITY 7: HEAL (when safe and need it, or to maintain HP advantage)
+        if self.can_cast("heal", me):
+            if (hp <= 65 and dist >= 4) or (hp <= 80 and hp_advantage >= 20 and dist >= 3):
+                return {"move": [0, 0], "spell": {"name": "heal"}}
 
-        # PRIORITY 7: RESOURCE COLLECTION
+        # PRIORITY 8: RESOURCE COLLECTION
         target_pos: Optional[Tuple[int, int]] = None
-        if hp <= 70:
+        if hp <= 60:
             target_pos = self.find_best_artifact(my_pos, opp_pos, artifacts, "health")
-        if not target_pos and mana <= 50:
+        if not target_pos and mana <= 40:
             target_pos = self.find_best_artifact(my_pos, opp_pos, artifacts, "mana")
-        if not target_pos and artifacts:
+        if not target_pos and (hp <= 80 or mana <= 60):
             target_pos = self.find_best_artifact(my_pos, opp_pos, artifacts, None)
 
         if target_pos:
             art_dist = self.get_dist(my_pos, target_pos)
-            if art_dist >= 4 and self.can_cast("teleport", me):
+            if art_dist >= 5 and self.can_cast("teleport", me):
                 return {"move": [0, 0], "spell": {"name": "teleport", "target": list(target_pos)}}
-            if art_dist >= 2 and self.can_cast("blink", me):
+            if art_dist >= 3 and self.can_cast("blink", me):
                 blink_dir = self.get_blink_toward(my_pos, target_pos, state)
                 return {"move": [0, 0], "spell": {"name": "blink", "target": blink_dir}}
             move = self.bfs_move(my_pos, target_pos, state)
             return {"move": move, "spell": None}
 
-        # PRIORITY 8: HUNT OPPONENT
+        # PRIORITY 9: AGGRESSIVE HUNT (when HP advantage)
+        if hp_advantage >= 25 and dist > 2:
+            if self.can_cast("blink", me):
+                blink_dir = self.get_blink_toward(my_pos, opp_pos, state)
+                return {"move": [0, 0], "spell": {"name": "blink", "target": blink_dir}}
+            return {"move": self.bfs_move(my_pos, opp_pos, state), "spell": None}
+
+        # PRIORITY 10: HUNT OPPONENT (close gap for fireball)
         if dist > 5:
             if self.can_cast("blink", me):
                 blink_dir = self.get_blink_toward(my_pos, opp_pos, state)
                 return {"move": [0, 0], "spell": {"name": "blink", "target": blink_dir}}
-            move = self.bfs_move(my_pos, opp_pos, state)
-            return {"move": move, "spell": None}
+            return {"move": self.bfs_move(my_pos, opp_pos, state), "spell": None}
 
-        # PRIORITY 9: MAINTAIN OPTIMAL DISTANCE (4-5 for fireball range)
-        optimal = 5
+        # PRIORITY 11: MAINTAIN OPTIMAL DISTANCE (4-5 for fireball range)
+        optimal = 4 if hp_advantage >= 10 else 5
         if dist < optimal - 1:
             return {"move": self.get_flee_move(my_pos, opp_pos, state), "spell": None}
         elif dist > optimal + 1:
             return {"move": self.bfs_move(my_pos, opp_pos, state), "spell": None}
+
+        # PRIORITY 12: AVOID EDGES (reposition toward center)
+        if self.is_near_edge(my_pos, state):
+            center = (4, 4)
+            return {"move": self.bfs_move(my_pos, center, state), "spell": None}
 
         return {"move": [0, 0], "spell": None}
 
@@ -122,6 +148,11 @@ class ArchmageBot(BotInterface):
 
     def get_dist(self, p1: Tuple[int, int], p2: Tuple[int, int]) -> int:
         return max(abs(p1[0] - p2[0]), abs(p1[1] - p2[1]))
+
+    def is_near_edge(self, pos: Tuple[int, int], state: Dict[str, Any]) -> bool:
+        board_size = state["board_size"]
+        w = h = board_size if isinstance(board_size, int) else 10
+        return pos[0] <= 1 or pos[0] >= w - 2 or pos[1] <= 1 or pos[1] >= h - 2
 
     def manhattan_dist(self, p1: Tuple[int, int], p2: Tuple[int, int]) -> int:
         return abs(p1[0] - p2[0]) + abs(p1[1] - p2[1])
