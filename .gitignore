@@ -179,3 +179,4 @@ bandit-report.json
 .claude/settings.local.json
 elite_genetic_optimizer.py
 evaluate_all.py
+analyze_moves.py
