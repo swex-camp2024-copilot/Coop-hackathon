@@ -1,0 +1,6809 @@
+{
+  "strategy_weights": {
+    "aggression": 1.0407801028558323,
+    "defense": 0.9466573686415466,
+    "resource_priority": 0.5986604403022415,
+    "positioning": 1.0,
+    "spell_preference": {
+      "melee_attack": 1.0,
+      "fireball": 1.0,
+      "heal": 1.0,
+      "shield": 1.0,
+      "summon": 1.0,
+      "teleport": 1.0
+    }
+  },
+  "stats": {
+    "games_played": 100,
+    "games_won": 13,
+    "total_damage_dealt": 0,
+    "total_damage_taken": 0,
+    "spell_success_rate": {}
+  },
+  "situation_outcomes": {
+    "healthy_high_far_high": {
+      "move_0_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_summon": {
+        "times_used": 10,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_summon": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_summon": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -2.857142857142857
+      },
+      "move_1_0_spell_summon": {
+        "times_used": 20,
+        "wins": 3,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_summon": {
+        "times_used": 11,
+        "wins": 2,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 23,
+        "wins": 6,
+        "avg_hp_change": -0.43478260869565216,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_summon": {
+        "times_used": 14,
+        "wins": 2,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_summon": {
+        "times_used": 20,
+        "wins": 3,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_summon": {
+        "times_used": 20,
+        "wins": 3,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 11,
+        "wins": 2,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_summon": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 105,
+        "wins": 21,
+        "avg_hp_change": -0.09523809523809523,
+        "avg_damage_dealt": 1.1428571428571428
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "healthy_medium_far_high": {
+      "move_1_1_spell_teleport": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 54,
+        "wins": 8,
+        "avg_hp_change": -0.01851851851851851,
+        "avg_damage_dealt": 0.9259259259259258
+      },
+      "move_1_0_spell_none": {
+        "times_used": 10,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 1.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -0.25,
+        "avg_damage_dealt": 1.25
+      },
+      "move_0_0_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 57,
+        "wins": 10,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.5263157894736842
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 1.25
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 60,
+        "wins": 9,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.6666666666666666
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 13,
+        "wins": 4,
+        "avg_hp_change": 1.3076923076923077,
+        "avg_damage_dealt": -1.5384615384615385
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 1.4,
+        "avg_damage_dealt": -4.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 1.8,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 19.333333333333332,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -5.0
+      },
+      "move_1_0_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_summon": {
+        "times_used": 5,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_summon": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_summon": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_summon": {
+        "times_used": 4,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_summon": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -9.0
+      }
+    },
+    "healthy_low_close_high": {
+      "move_1_0_spell_fireball": {
+        "times_used": 52,
+        "wins": 4,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 7.8076923076923075
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 18,
+        "wins": 0,
+        "avg_hp_change": -7.263888888888889,
+        "avg_damage_dealt": 2.4305555555555554
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 19,
+        "wins": 0,
+        "avg_hp_change": -1.6842105263157894,
+        "avg_damage_dealt": 6.842105263157895
+      },
+      "move_1_1_spell_none": {
+        "times_used": 92,
+        "wins": 4,
+        "avg_hp_change": -1.9585482682387616,
+        "avg_damage_dealt": 0.2518422991893884
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 37,
+        "wins": 2,
+        "avg_hp_change": -3.051081081081081,
+        "avg_damage_dealt": 6.709459459459462
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 20,
+        "wins": 0,
+        "avg_hp_change": -2.3,
+        "avg_damage_dealt": -0.4
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -4.909090909090909,
+        "avg_damage_dealt": -0.9090909090909091
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -1.4,
+        "avg_damage_dealt": 6.8
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 54,
+        "wins": 4,
+        "avg_hp_change": -6.574074074074074,
+        "avg_damage_dealt": 0.7777777777777776
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -12.857142857142858,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 48,
+        "wins": 1,
+        "avg_hp_change": -1.3125,
+        "avg_damage_dealt": 7.083333333333333
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -1.5,
+        "avg_damage_dealt": -1.6666666666666667
+      },
+      "move_1_0_spell_none": {
+        "times_used": 44,
+        "wins": 1,
+        "avg_hp_change": -0.6038961038961039,
+        "avg_damage_dealt": -0.3311688311688312
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 40,
+        "wins": 1,
+        "avg_hp_change": -2.850000000000001,
+        "avg_damage_dealt": -0.35
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -8.5,
+        "avg_damage_dealt": -1.25
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -4.6,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 12,
+        "wins": 1,
+        "avg_hp_change": -4.833333333333333,
+        "avg_damage_dealt": -1.5833333333333333
+      },
+      "move_0_1_spell_none": {
+        "times_used": 178,
+        "wins": 6,
+        "avg_hp_change": -1.095505617977528,
+        "avg_damage_dealt": -0.4213483146067415
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 42,
+        "wins": 1,
+        "avg_hp_change": -1.2749615975422426,
+        "avg_damage_dealt": -0.58678955453149
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": -7.0,
+        "avg_damage_dealt": 1.5384615384615385
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 121,
+        "wins": 4,
+        "avg_hp_change": -1.0743801652892564,
+        "avg_damage_dealt": 0.4132231404958678
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -5.090909090909091,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -5.833333333333333,
+        "avg_damage_dealt": 0.8333333333333334
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 23,
+        "wins": 1,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 6.3478260869565215
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 6.75,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 103,
+        "wins": 7,
+        "avg_hp_change": -2.330636461704423,
+        "avg_damage_dealt": 6.053937432578208
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -1.8333333333333333,
+        "avg_damage_dealt": 5.666666666666667
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -9.0,
+        "avg_damage_dealt": 5.8
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 15.166666666666666,
+        "avg_damage_dealt": 0.5
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 19.333333333333332,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 12.333333333333334,
+        "avg_damage_dealt": 4.166666666666667
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": 18.555555555555557,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 9,
+        "wins": 3,
+        "avg_hp_change": 5.111111111111111,
+        "avg_damage_dealt": 1.1111111111111112
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 18.88888888888889,
+        "avg_damage_dealt": 4.444444444444445
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 12.857142857142858,
+        "avg_damage_dealt": 2.857142857142857
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 2.857142857142857
+      }
+    },
+    "healthy_low_close_low": {
+      "move_1_1_spell_none": {
+        "times_used": 13,
+        "wins": 2,
+        "avg_hp_change": -1.3846153846153846,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 8,
+        "wins": 1,
+        "avg_hp_change": -0.5,
+        "avg_damage_dealt": 5.5
+      },
+      "move_1_0_spell_none": {
+        "times_used": 8,
+        "wins": 1,
+        "avg_hp_change": -2.25,
+        "avg_damage_dealt": -3.75
+      },
+      "move_0_1_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -4.285714285714286,
+        "avg_damage_dealt": -1.4285714285714286
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 84,
+        "wins": 22,
+        "avg_hp_change": -1.2998814046229283,
+        "avg_damage_dealt": -1.0989610928260882
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 9,
+        "wins": 2,
+        "avg_hp_change": 16.22222222222222,
+        "avg_damage_dealt": -1.1111111111111112
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 29,
+        "wins": 10,
+        "avg_hp_change": -0.5665024630541873,
+        "avg_damage_dealt": 3.3399014778325125
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": -6.714285714285714,
+        "avg_damage_dealt": -1.4285714285714286
+      },
+      "move_0_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -3.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": -1.0769230769230769,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 15,
+        "wins": 3,
+        "avg_hp_change": -1.0666666666666667,
+        "avg_damage_dealt": -1.9999999999999996
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": -5.333333333333333,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -2.8,
+        "avg_damage_dealt": 2.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -13.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 11,
+        "wins": 3,
+        "avg_hp_change": -6.7272727272727275,
+        "avg_damage_dealt": 3.6363636363636362
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": -13.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 8,
+        "wins": 2,
+        "avg_hp_change": -0.5,
+        "avg_damage_dealt": 3.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -0.5714285714285714,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -30.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -5.0
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 16,
+        "wins": 5,
+        "avg_hp_change": -1.75,
+        "avg_damage_dealt": 7.124999999999998
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "healthy_low_medium_low": {
+      "move_0_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -8.333333333333334,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -1.1111111111111112,
+        "avg_damage_dealt": -1.1111111111111112
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": -7.5
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 34,
+        "wins": 6,
+        "avg_hp_change": -1.1245098039215686,
+        "avg_damage_dealt": -4.245098039215685
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 51,
+        "wins": 14,
+        "avg_hp_change": -0.9089324618736383,
+        "avg_damage_dealt": -3.8082788671023966
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 18,
+        "wins": 5,
+        "avg_hp_change": -2.844444444444444,
+        "avg_damage_dealt": 2.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 0.3333333333333333,
+        "avg_damage_dealt": -13.333333333333334
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 10,
+        "wins": 3,
+        "avg_hp_change": -1.6,
+        "avg_damage_dealt": 2.4
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": 2.857142857142857,
+        "avg_damage_dealt": -8.571428571428571
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 14,
+        "wins": 1,
+        "avg_hp_change": -5.357142857142857,
+        "avg_damage_dealt": -2.857142857142857
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -0.5,
+        "avg_damage_dealt": -5.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": -8.88888888888889
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 19,
+        "wins": 2,
+        "avg_hp_change": -4.684210526315789,
+        "avg_damage_dealt": -3.1578947368421053
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -2.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 11,
+        "wins": 2,
+        "avg_hp_change": -1.1818181818181819,
+        "avg_damage_dealt": 1.8181818181818181
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -0.5,
+        "avg_damage_dealt": 5.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -7.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -30.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 12.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_low_medium_low": {
+      "move_1_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 5,
+        "wins": 1,
+        "avg_hp_change": 4.0,
+        "avg_damage_dealt": -2.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -15.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": -4.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_low_medium_high": {
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 18,
+        "wins": 0,
+        "avg_hp_change": -8.476190476190474,
+        "avg_damage_dealt": -1.1904761904761907
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -1.1111111111111112,
+        "avg_damage_dealt": -6.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 35,
+        "wins": 0,
+        "avg_hp_change": -0.6857142857142859,
+        "avg_damage_dealt": 0.02857142857142857
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -14.285714285714286,
+        "avg_damage_dealt": 5.142857142857143
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 76,
+        "wins": 0,
+        "avg_hp_change": 0.7236842105263157,
+        "avg_damage_dealt": -0.9210526315789478
+      },
+      "move_1_1_spell_none": {
+        "times_used": 53,
+        "wins": 0,
+        "avg_hp_change": -0.1320754716981132,
+        "avg_damage_dealt": -0.26415094339622647
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 16,
+        "wins": 0,
+        "avg_hp_change": 15.6875,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 31,
+        "wins": 0,
+        "avg_hp_change": -9.64516129032258,
+        "avg_damage_dealt": -0.6451612903225806
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -2.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 14,
+        "wins": 0,
+        "avg_hp_change": -0.7142857142857143,
+        "avg_damage_dealt": -2.142857142857143
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 33,
+        "wins": 0,
+        "avg_hp_change": 0.6363636363636364,
+        "avg_damage_dealt": -1.8181818181818181
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 29,
+        "wins": 0,
+        "avg_hp_change": -1.4285714285714284,
+        "avg_damage_dealt": 0.35714285714285715
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": -1.5384615384615385,
+        "avg_damage_dealt": -2.769230769230769
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -7.4,
+        "avg_damage_dealt": -3.0
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": -3.076923076923077,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -8.909090909090908,
+        "avg_damage_dealt": -1.8181818181818181
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 34,
+        "wins": 0,
+        "avg_hp_change": -8.941176470588234,
+        "avg_damage_dealt": -1.1764705882352942
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -1.6666666666666667,
+        "avg_damage_dealt": -1.6666666666666667
+      },
+      "move_1_0_spell_none": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -2.8,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -9.93939393939394,
+        "avg_damage_dealt": -1.8181818181818181
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -13.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 46,
+        "wins": 0,
+        "avg_hp_change": -8.152173913043478,
+        "avg_damage_dealt": -1.0434782608695659
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 57,
+        "wins": 0,
+        "avg_hp_change": -0.7487004548408058,
+        "avg_damage_dealt": -0.142949967511371
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -4.545454545454546,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 21,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 0.47619047619047616
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": 0.7692307692307693,
+        "avg_damage_dealt": -1.5384615384615385
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 33,
+        "wins": 0,
+        "avg_hp_change": 17.696969696969695,
+        "avg_damage_dealt": -0.6060606060606061
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -1.6666666666666667
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 26,
+        "wins": 1,
+        "avg_hp_change": -2.692307692307693,
+        "avg_damage_dealt": -1.923076923076923
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 14,
+        "wins": 1,
+        "avg_hp_change": -3.142857142857143,
+        "avg_damage_dealt": 4.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -9.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 17.2,
+        "avg_damage_dealt": -2.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 24,
+        "wins": 1,
+        "avg_hp_change": 16.333333333333332,
+        "avg_damage_dealt": -1.6666666666666667
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -4.875,
+        "avg_damage_dealt": 3.5
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": 14.090909090909092,
+        "avg_damage_dealt": -1.8181818181818181
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -7.0,
+        "avg_damage_dealt": 1.3333333333333333
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -1.1111111111111112,
+        "avg_damage_dealt": 0.8888888888888888
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -1.25,
+        "avg_damage_dealt": 1.375
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -4.777777777777778,
+        "avg_damage_dealt": 2.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 15,
+        "wins": 0,
+        "avg_hp_change": 15.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 15.714285714285714,
+        "avg_damage_dealt": -7.428571428571429
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 0.9,
+        "avg_damage_dealt": 2.8
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 17.2,
+        "avg_damage_dealt": -2.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 7.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 3.3333333333333335,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 13.333333333333334,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_medium_medium_high": {
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -5.222222222222222,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -4.8,
+        "avg_damage_dealt": 0.8
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -11.333333333333334,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 16.5,
+        "avg_damage_dealt": -9.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -10.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 1.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 15.777777777777779,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -8.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -10.333333333333334,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 3.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -2.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -6.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -4.75,
+        "avg_damage_dealt": -2.5
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 11,
+        "wins": 2,
+        "avg_hp_change": -8.909090909090908,
+        "avg_damage_dealt": -3.6363636363636362
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -17.142857142857142,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -7.333333333333333,
+        "avg_damage_dealt": 7.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -5.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -9.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 12,
+        "wins": 2,
+        "avg_hp_change": 12.583333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 13.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.4,
+        "avg_damage_dealt": 1.6
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 16.666666666666668,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 16.6,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 13.714285714285714,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 15.0,
+        "avg_damage_dealt": -7.0
+      }
+    },
+    "critical_medium_medium_high": {
+      "move_1_-1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 13.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -4.666666666666667,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 17.428571428571427,
+        "avg_damage_dealt": -1.4285714285714286
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 15.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -15.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 30.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -8.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -6.333333333333333
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 16.25,
+        "avg_damage_dealt": -5.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -2.25
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_high_medium_high": {
+      "move_-1_-1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 13.333333333333334,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -1.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 16.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 12.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0,
+        "avg_damage_dealt": 0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_high_far_high": {
+      "move_1_1_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_low_close_high": {
+      "move_-1_1_spell_shield": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -4.444444444444445
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -1.6363636363636365,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -2.4,
+        "avg_damage_dealt": 6.6
+      },
+      "move_1_1_spell_none": {
+        "times_used": 54,
+        "wins": 0,
+        "avg_hp_change": 0.9259259259259259,
+        "avg_damage_dealt": -0.7407407407407407
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 18,
+        "wins": 0,
+        "avg_hp_change": -1.6666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 29,
+        "wins": 1,
+        "avg_hp_change": -2.3819628647214857,
+        "avg_damage_dealt": 8.132625994694964
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": -7.230769230769231,
+        "avg_damage_dealt": -0.9230769230769231
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -7.1,
+        "avg_damage_dealt": -2.6
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 14,
+        "wins": 0,
+        "avg_hp_change": -0.7142857142857143,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 16,
+        "wins": 0,
+        "avg_hp_change": -2.125,
+        "avg_damage_dealt": 0.625
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": -2.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -6.814814814814814,
+        "avg_damage_dealt": -0.925925925925926
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 17,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -0.35294117647058826
+      },
+      "move_1_0_spell_none": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -1.0909090909090908,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 16,
+        "wins": 0,
+        "avg_hp_change": -0.625,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 59,
+        "wins": 0,
+        "avg_hp_change": -7.389830508474576,
+        "avg_damage_dealt": 2.406779661016948
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 67,
+        "wins": 2,
+        "avg_hp_change": -11.104477611940299,
+        "avg_damage_dealt": 1.9552238805970152
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": 19.166666666666668,
+        "avg_damage_dealt": -1.6666666666666667
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -5.6,
+        "avg_damage_dealt": -4.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 43,
+        "wins": 0,
+        "avg_hp_change": -0.08481532147742817,
+        "avg_damage_dealt": 0.957592339261286
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -2.5,
+        "avg_damage_dealt": -4.25
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 14,
+        "wins": 0,
+        "avg_hp_change": 20.071428571428573,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 26,
+        "wins": 0,
+        "avg_hp_change": -7.076923076923077,
+        "avg_damage_dealt": 0.7692307692307693
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -2.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 51,
+        "wins": 0,
+        "avg_hp_change": -1.1764705882352942,
+        "avg_damage_dealt": 0.03921568627451022
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 17,
+        "wins": 0,
+        "avg_hp_change": -0.5882352941176471,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -7.0,
+        "avg_damage_dealt": 0.16666666666666666
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 25,
+        "wins": 0,
+        "avg_hp_change": -1.44,
+        "avg_damage_dealt": 0.32
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -3.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -5.833333333333333,
+        "avg_damage_dealt": 2.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -1.125,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -7.714285714285714,
+        "avg_damage_dealt": 4.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -3.7777777777777777,
+        "avg_damage_dealt": 4.888888888888889
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 28,
+        "wins": 0,
+        "avg_hp_change": 17.571428571428566,
+        "avg_damage_dealt": 1.0714285714285714
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": 17.727272727272727,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -5.555555555555555,
+        "avg_damage_dealt": 6.666666666666667
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -1.375,
+        "avg_damage_dealt": 3.5
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 13.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": 16.90909090909091,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 34,
+        "wins": 0,
+        "avg_hp_change": 17.864097363083168,
+        "avg_damage_dealt": 1.3387423935091276
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -5.2,
+        "avg_damage_dealt": 7.9
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -4.4,
+        "avg_damage_dealt": 6.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 3.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_medium_close_high": {
+      "move_0_1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 12.6
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -9.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -3.5714285714285716,
+        "avg_damage_dealt": 5.142857142857143
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -9.375,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -8.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 1,
+        "avg_hp_change": -4.7,
+        "avg_damage_dealt": 0.4
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -10.666666666666666,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": 5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": -12.222222222222221,
+        "avg_damage_dealt": 1.1111111111111112
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -7.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 9,
+        "wins": 2,
+        "avg_hp_change": 16.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -30.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 9.142857142857142
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 18.125,
+        "avg_damage_dealt": 1.25
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 5.0,
+        "avg_damage_dealt": -6.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 6.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": 8.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -4.857142857142857,
+        "avg_damage_dealt": 8.285714285714286
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 3.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 15.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 13.8,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 17.5,
+        "avg_damage_dealt": -5.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 15.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "healthy_low_medium_high": {
+      "move_1_0_spell_none": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -1.5,
+        "avg_damage_dealt": -4.999999999999999
+      },
+      "move_1_1_spell_none": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -0.9090909090909091,
+        "avg_damage_dealt": -4.7272727272727275
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 22,
+        "wins": 0,
+        "avg_hp_change": -2.1818181818181817,
+        "avg_damage_dealt": -1.1363636363636365
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -3.0,
+        "avg_damage_dealt": 0.9
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 313,
+        "wins": 4,
+        "avg_hp_change": -1.3947724592984576,
+        "avg_damage_dealt": -1.5173028963292028
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 45,
+        "wins": 0,
+        "avg_hp_change": -1.5333333333333334,
+        "avg_damage_dealt": 3.8444444444444446
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 59,
+        "wins": 2,
+        "avg_hp_change": -2.542372881355932,
+        "avg_damage_dealt": -1.64406779661017
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 15,
+        "wins": 0,
+        "avg_hp_change": -1.1333333333333333,
+        "avg_damage_dealt": 3.3333333333333335
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": -0.6153846153846154,
+        "avg_damage_dealt": -3.076923076923077
+      },
+      "move_0_1_spell_none": {
+        "times_used": 383,
+        "wins": 11,
+        "avg_hp_change": -0.8205388096662172,
+        "avg_damage_dealt": -1.4456114802352027
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 95,
+        "wins": 1,
+        "avg_hp_change": -1.7674014008865222,
+        "avg_damage_dealt": -1.0647221675920187
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": -6.461538461538462,
+        "avg_damage_dealt": -1.5384615384615385
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 70,
+        "wins": 2,
+        "avg_hp_change": -2.0206896551724136,
+        "avg_damage_dealt": 3.8729064039408856
+      },
+      "move_0_0_spell_none": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -5.6
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -13.0,
+        "avg_damage_dealt": -5.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -14.555555555555555,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": 0.6666666666666666,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 18.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 20,
+        "wins": 0,
+        "avg_hp_change": -8.55,
+        "avg_damage_dealt": -0.2
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 32,
+        "wins": 0,
+        "avg_hp_change": -5.57125,
+        "avg_damage_dealt": 5.9049999999999985
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 133,
+        "wins": 2,
+        "avg_hp_change": -1.481203007518797,
+        "avg_damage_dealt": 4.3007518796992485
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 21,
+        "wins": 0,
+        "avg_hp_change": -8.476190476190474,
+        "avg_damage_dealt": 0.47619047619047616
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -1.2,
+        "avg_damage_dealt": -2.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 34,
+        "wins": 1,
+        "avg_hp_change": -8.941176470588236,
+        "avg_damage_dealt": -0.5882352941176471
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 2.4999999999999996
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.8,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -6.222222222222222,
+        "avg_damage_dealt": -4.444444444444445
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -8.416666666666668,
+        "avg_damage_dealt": 0.8333333333333334
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -6.222222222222222,
+        "avg_damage_dealt": 3.111111111111111
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 1.5,
+        "avg_damage_dealt": -5.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 19.2,
+        "avg_damage_dealt": -4.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 5.285714285714286,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 16.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": 2.2857142857142856,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 4.833333333333333,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 4.0,
+        "avg_damage_dealt": -4.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 18.571428571428573,
+        "avg_damage_dealt": -2.857142857142857
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -4.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 14.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -1.0714285714285714
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -10.666666666666666
+      }
+    },
+    "healthy_low_far_high": {
+      "move_-1_1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 1.5,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 15,
+        "wins": 1,
+        "avg_hp_change": -1.0909090909090908,
+        "avg_damage_dealt": -2.9870129870129865
+      },
+      "move_1_1_spell_none": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -0.6666666666666666,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 1.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 7,
+        "wins": 2,
+        "avg_hp_change": 1.7142857142857142,
+        "avg_damage_dealt": -2.142857142857143
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": 5.285714285714286,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -0.9090909090909091,
+        "avg_damage_dealt": -1.8181818181818181
+      },
+      "move_0_1_spell_none": {
+        "times_used": 162,
+        "wins": 13,
+        "avg_hp_change": -0.7287427898337722,
+        "avg_damage_dealt": -0.9520835463367671
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 16.857142857142858,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 1.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -7.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -2.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": -4.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -11.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 18.571428571428573,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_low_medium_high": {
+      "move_-1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 13.7,
+        "avg_damage_dealt": -4.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -2.8,
+        "avg_damage_dealt": -0.8
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -0.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -6.875,
+        "avg_damage_dealt": -3.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -2.857142857142857,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -14.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -9.444444444444445,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 13.25,
+        "avg_damage_dealt": -5.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -3.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 15.777777777777779,
+        "avg_damage_dealt": -4.444444444444445
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": -4.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -7.518518518518517,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -0.3333333333333336,
+        "avg_damage_dealt": -1.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -9.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -3.6,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 13,
+        "wins": 0,
+        "avg_hp_change": -2.3076923076923075,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 1.4285714285714286,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 2.5714285714285716,
+        "avg_damage_dealt": -2.857142857142857
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 13.88888888888889,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -2.142857142857143,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -8.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -1.4
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 20,
+        "wins": 0,
+        "avg_hp_change": 14.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 18,
+        "wins": 0,
+        "avg_hp_change": 14.944444444444445,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 15.203703703703704,
+        "avg_damage_dealt": -4.814814814814815
+      }
+    },
+    "critical_low_close_high": {
+      "move_1_-1_spell_heal": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": 13.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -8.88888888888889,
+        "avg_damage_dealt": 1.4814814814814818
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -6.2,
+        "avg_damage_dealt": -0.6
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -6.458333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -7.333333333333333,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 18,
+        "wins": 0,
+        "avg_hp_change": 18.166666666666668,
+        "avg_damage_dealt": -2.2222222222222223
+      },
+      "move_1_1_spell_none": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -2.5,
+        "avg_damage_dealt": -1.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 12.5,
+        "avg_damage_dealt": -4.125
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -3.1333333333333337,
+        "avg_damage_dealt": 0.6666666666666667
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -5.857142857142857,
+        "avg_damage_dealt": 0.14285714285714285
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -3.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 14.444444444444445,
+        "avg_damage_dealt": -1.7777777777777777
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -1.6666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -7.4,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -1.6666666666666667,
+        "avg_damage_dealt": -0.6666666666666666
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -7.5,
+        "avg_damage_dealt": 11.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -7.222222222222222,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 11.8,
+        "avg_damage_dealt": 0.5
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -2.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": 15.75,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 2.3333333333333335
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 12,
+        "wins": 0,
+        "avg_hp_change": -4.916666666666667,
+        "avg_damage_dealt": 1.2499999999999998
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 11.11111111111111,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 12.2,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -6.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": 12.7,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_high_close_high": {
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -3.75
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 12.0,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 11.714285714285714,
+        "avg_damage_dealt": 2.857142857142857
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 15.142857142857142,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 15.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -8.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 18.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_low_far_high": {
+      "move_-1_1_spell_heal": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -2.857142857142857
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -1.6666666666666667,
+        "avg_damage_dealt": -2.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": -2.2222222222222223,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 10,
+        "wins": 2,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": -0.8
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -1.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 2.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 5,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 2.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -1.7857142857142858,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 18.0,
+        "avg_damage_dealt": -4.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -1.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -5.142857142857143,
+        "avg_damage_dealt": -2.857142857142857
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 16.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -10.833333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -10.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -6.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -8.333333333333334,
+        "avg_damage_dealt": -4.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -8.571428571428571,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 18.571428571428573,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -6.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 19.333333333333332,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_low_close_low": {
+      "move_1_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -5.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 13.833333333333334,
+        "avg_damage_dealt": 1.6666666666666667
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 6.666666666666667,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 7,
+        "wins": 2,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -0.7142857142857143
+      },
+      "move_0_0_spell_none": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": -0.3333333333333333,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 8,
+        "wins": 2,
+        "avg_hp_change": -2.5,
+        "avg_damage_dealt": 3.5
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": -1.1111111111111112,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -3.0,
+        "avg_damage_dealt": -1.4285714285714286
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 4,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -2.5
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 0.7142857142857143
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 2.5
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 18.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "healthy_high_medium_high": {
+      "move_1_1_spell_fireball": {
+        "times_used": 15,
+        "wins": 2,
+        "avg_hp_change": -6.933333333333334,
+        "avg_damage_dealt": 10.533333333333333
+      },
+      "move_1_1_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -1.6666666666666667,
+        "avg_damage_dealt": 1.6666666666666667
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 14,
+        "wins": 3,
+        "avg_hp_change": -5.285714285714286,
+        "avg_damage_dealt": 9.571428571428571
+      },
+      "move_0_1_spell_none": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 2.2222222222222223
+      },
+      "move_1_0_spell_none": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": -1.6666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": -6.857142857142857,
+        "avg_damage_dealt": 5.428571428571429
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -20.0,
+        "avg_damage_dealt": 11.5
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.6
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 2.857142857142857
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": -5.714285714285714,
+        "avg_damage_dealt": 7.142857142857143
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -20.0,
+        "avg_damage_dealt": 4.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -8.5,
+        "avg_damage_dealt": 11.5
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 11,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 7.2727272727272725
+      },
+      "move_0_0_spell_none": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 1.6666666666666667
+      },
+      "move_1_0_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 10,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 1.6666666666666667
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 2.5
+      },
+      "move_1_-1_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -10.4,
+        "avg_damage_dealt": 8.4
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 15,
+        "wins": 2,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": 11.733333333333333
+      },
+      "move_0_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 10.0
+      },
+      "move_-1_1_spell_summon": {
+        "times_used": 4,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 10.0
+      }
+    },
+    "healthy_medium_close_high": {
+      "move_0_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": -3.5,
+        "avg_damage_dealt": 10.75
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -30.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": -3.7777777777777777,
+        "avg_damage_dealt": 5.222222222222222
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -0.8571428571428571,
+        "avg_damage_dealt": 10.0
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 42,
+        "wins": 7,
+        "avg_hp_change": -3.4761904761904763,
+        "avg_damage_dealt": 11.16666666666667
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": -16.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 3.3333333333333335
+      },
+      "move_1_0_spell_summon": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -22.0,
+        "avg_damage_dealt": 5.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -2.4285714285714284,
+        "avg_damage_dealt": 5.714285714285714
+      },
+      "move_1_1_spell_none": {
+        "times_used": 8,
+        "wins": 2,
+        "avg_hp_change": -1.875,
+        "avg_damage_dealt": 8.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 9,
+        "wins": 1,
+        "avg_hp_change": -2.4444444444444446,
+        "avg_damage_dealt": 8.444444444444445
+      },
+      "move_1_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": -7.333333333333333,
+        "avg_damage_dealt": 3.3333333333333335
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 7.333333333333333,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 8,
+        "wins": 0,
+        "avg_hp_change": 18.75,
+        "avg_damage_dealt": 5.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 39,
+        "wins": 7,
+        "avg_hp_change": -2.58974358974359,
+        "avg_damage_dealt": 10.794871794871796
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": -7.333333333333333,
+        "avg_damage_dealt": 0.8333333333333334
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -6.333333333333333,
+        "avg_damage_dealt": 5.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -16.0,
+        "avg_damage_dealt": 2.6666666666666665
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 5,
+        "wins": 2,
+        "avg_hp_change": -0.4,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 7,
+        "wins": 2,
+        "avg_hp_change": -1.8571428571428572,
+        "avg_damage_dealt": 5.714285714285714
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 5,
+        "wins": 2,
+        "avg_hp_change": 19.8,
+        "avg_damage_dealt": 0.4
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 6.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 10.0
+      },
+      "move_1_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_summon": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_high_close_high": {
+      "move_1_1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 9.0,
+        "avg_damage_dealt": 2.5
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -11.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -3.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -8.5,
+        "avg_damage_dealt": 10.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 5.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 5.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": 5.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -11.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -12.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -17.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 13.333333333333334,
+        "avg_damage_dealt": 3.3333333333333335
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -2.0
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 4.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -30.0,
+        "avg_damage_dealt": 4.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 12.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 13.333333333333334
+      }
+    },
+    "low_medium_close_low": {
+      "move_1_0_spell_teleport": {
+        "times_used": 5,
+        "wins": 1,
+        "avg_hp_change": 8.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 7,
+        "wins": 2,
+        "avg_hp_change": 17.428571428571427,
+        "avg_damage_dealt": -7.142857142857143
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -15.0,
+        "avg_damage_dealt": 5.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -7.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "healthy_medium_medium_high": {
+      "move_-1_0_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 6.0
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 11,
+        "wins": 0,
+        "avg_hp_change": -7.090909090909091,
+        "avg_damage_dealt": 11.090909090909092
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -12.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 9,
+        "wins": 0,
+        "avg_hp_change": 18.444444444444443,
+        "avg_damage_dealt": 3.3333333333333335
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -11.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": 6.857142857142857
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 23,
+        "wins": 3,
+        "avg_hp_change": -5.130434782608695,
+        "avg_damage_dealt": 8.521739130434783
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 10,
+        "wins": 0,
+        "avg_hp_change": -2.2,
+        "avg_damage_dealt": 5.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": 1.6666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 3.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -2.8,
+        "avg_damage_dealt": 8.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 2.5
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 1.3333333333333333
+      },
+      "move_1_0_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 15,
+        "wins": 2,
+        "avg_hp_change": -2.2666666666666666,
+        "avg_damage_dealt": 6.533333333333333
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -5.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -9.333333333333334,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -4.8,
+        "avg_damage_dealt": -5.2
+      },
+      "move_0_-1_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -8.5,
+        "avg_damage_dealt": 2.5
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.6666666666666666,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_summon": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_summon": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 6,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 1.6666666666666667
+      },
+      "move_1_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_summon": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_-1_0_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 3.3333333333333335
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 5,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_medium_far_high": {
+      "move_1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 16.666666666666668,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -7.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -19.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -12.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 16.666666666666668,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -11.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_medium_close_high": {
+      "move_-1_1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 13.2,
+        "avg_damage_dealt": -1.4
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0,
+        "avg_damage_dealt": 0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 11.714285714285714,
+        "avg_damage_dealt": 2.857142857142857
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 4,
+        "wins": 1,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -5.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -7.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 11.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 19.0,
+        "avg_damage_dealt": -4.0
+      },
+      "move_0_-1_spell_shield": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -12.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 15.428571428571429,
+        "avg_damage_dealt": -2.4285714285714284
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 11.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 12.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 9.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_low_close_low": {
+      "move_-1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 16.0,
+        "avg_damage_dealt": -4.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "healthy_high_close_high": {
+      "move_1_1_spell_fireball": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": -10.4,
+        "avg_damage_dealt": 13.2
+      },
+      "move_1_0_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -3.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 45,
+        "wins": 9,
+        "avg_hp_change": -3.488888888888889,
+        "avg_damage_dealt": 19.066666666666666
+      },
+      "move_0_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_summon": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": -13.333333333333334,
+        "avg_damage_dealt": 10.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 1,
+        "avg_hp_change": -5.5,
+        "avg_damage_dealt": 6.5
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 6.666666666666667
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -1.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 10.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 10.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 5,
+        "wins": 1,
+        "avg_hp_change": -3.0,
+        "avg_damage_dealt": 8.4
+      }
+    },
+    "healthy_medium_close_low": {
+      "move_-1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -13.0,
+        "avg_damage_dealt": 5.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 2,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 7,
+        "wins": 1,
+        "avg_hp_change": -6.285714285714286,
+        "avg_damage_dealt": 11.142857142857142
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 7,
+        "wins": 3,
+        "avg_hp_change": -5.857142857142857,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 7,
+        "wins": 3,
+        "avg_hp_change": -5.428571428571429,
+        "avg_damage_dealt": 2.857142857142857
+      },
+      "move_1_0_spell_summon": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": -7.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 12,
+        "wins": 3,
+        "avg_hp_change": -4.75,
+        "avg_damage_dealt": 11.75
+      },
+      "move_0_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": 4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_summon": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": 4.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -9.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "healthy_high_close_low": {
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_fireball": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -8.0,
+        "avg_damage_dealt": 6.666666666666667
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -20.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -15.0,
+        "avg_damage_dealt": 10.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -1.5,
+        "avg_damage_dealt": 5.0
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 4.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -15.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "low_high_close_low": {
+      "move_1_1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -8.5,
+        "avg_damage_dealt": 2.5
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": -16.5,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 5,
+        "wins": 0,
+        "avg_hp_change": 16.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -2.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -9.0,
+        "avg_damage_dealt": -3.75
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 23.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_high_medium_low": {
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 10.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -12.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 8.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 18.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "critical_medium_far_high": {
+      "move_-1_-1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 16.666666666666668,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_low_far_low": {
+      "move_-1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_high_medium_high": {
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -3.5,
+        "avg_damage_dealt": 2.5
+      },
+      "move_0_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 6,
+        "wins": 0,
+        "avg_hp_change": 18.666666666666668,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 16.75,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -6.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -3.3333333333333335,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 2.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -7.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 23.0,
+        "avg_damage_dealt": -10.0
+      }
+    },
+    "low_high_far_high": {
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0,
+        "avg_damage_dealt": 0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 19.333333333333332,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -13.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_low_far_high": {
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -6.666666666666667,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_heal": {
+        "times_used": 7,
+        "wins": 0,
+        "avg_hp_change": 18.571428571428573,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 13.333333333333334,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_-1_0_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": -3.6666666666666665,
+        "avg_damage_dealt": -6.666666666666667
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 4,
+        "wins": 0,
+        "avg_hp_change": -3.25,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 16.666666666666668,
+        "avg_damage_dealt": -4.666666666666667
+      },
+      "move_1_1_spell_none": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 19.666666666666668,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_shield": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "healthy_medium_medium_low": {
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0,
+        "avg_damage_dealt": 0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_teleport": {
+        "times_used": 4,
+        "wins": 1,
+        "avg_hp_change": 1.75,
+        "avg_damage_dealt": 2.5
+      },
+      "move_0_0_spell_fireball": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": -15.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_fireball": {
+        "times_used": 7,
+        "wins": 3,
+        "avg_hp_change": -2.142857142857143,
+        "avg_damage_dealt": 11.428571428571429
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": -11.333333333333334,
+        "avg_damage_dealt": 3.3333333333333335
+      },
+      "move_0_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 2,
+        "wins": 2,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 10.0
+      },
+      "move_-1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "critical_high_close_low": {
+      "move_1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 6.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0,
+        "avg_damage_dealt": 0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 15.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_high_medium_low": {
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "low_medium_medium_low": {
+      "move_-1_1_spell_fireball": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_0_spell_melee_attack": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": -5.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 3,
+        "wins": 1,
+        "avg_hp_change": 16.333333333333332,
+        "avg_damage_dealt": -3.3333333333333335
+      },
+      "move_1_0_spell_fireball": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_-1_spell_fireball": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "healthy_low_far_low": {
+      "move_1_-1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_0_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 16.666666666666668,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 2,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_0_spell_none": {
+        "times_used": 8,
+        "wins": 3,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 1.25
+      },
+      "move_1_0_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "critical_medium_close_low": {
+      "move_1_0_spell_heal": {
+        "times_used": 3,
+        "wins": 0,
+        "avg_hp_change": 15.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_0_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "critical_medium_medium_low": {
+      "move_1_0_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -4.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "healthy_medium_far_low": {
+      "move_1_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_teleport": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_0_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_-1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -10.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "healthy_high_medium_low": {
+      "move_1_1_spell_fireball": {
+        "times_used": 6,
+        "wins": 4,
+        "avg_hp_change": -1.8,
+        "avg_damage_dealt": 12.0
+      },
+      "move_1_1_spell_none": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_1_-1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": -14.0,
+        "avg_damage_dealt": 0.0
+      },
+      "move_-1_1_spell_summon": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_none": {
+        "times_used": 2,
+        "wins": 2,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 5.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 16.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "low_medium_far_low": {
+      "move_1_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 10.0,
+        "avg_damage_dealt": -20.0
+      },
+      "move_0_1_spell_heal": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 20.0,
+        "avg_damage_dealt": -20.0
+      }
+    },
+    "critical_low_medium_low": {
+      "move_1_0_spell_heal": {
+        "times_used": 2,
+        "wins": 0,
+        "avg_hp_change": 18.0,
+        "avg_damage_dealt": -10.0
+      },
+      "move_-1_1_spell_melee_attack": {
+        "times_used": 1,
+        "wins": 0,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    },
+    "healthy_high_far_low": {
+      "move_1_1_spell_none": {
+        "times_used": 1,
+        "wins": 1,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 10.0
+      },
+      "move_-1_1_spell_none": {
+        "times_used": 2,
+        "wins": 2,
+        "avg_hp_change": 0.0,
+        "avg_damage_dealt": 0.0
+      }
+    }
+  }
+}
