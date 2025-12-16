@@ -1,3 +1,5 @@
+Saljem ti ovaj moj sto razbija u lokalu sve
+ 
 from bots.bot_interface import BotInterface
  
  
@@ -8,6 +10,7 @@ class UltimateBot(BotInterface):
         self._minion_sprite_path = "assets/minions/minion_ultimate.png"
  
         self._turn = 0
+        self._opp_fireballs = 0
  
     @property
     def name(self):
@@ -57,28 +60,57 @@ class UltimateBot(BotInterface):
         move = [0, 0]
         spell = None
  
-        # ============================================================
-        # PHASE 1 — EARLY / DEFENSIVE CONTROL
-        # ============================================================
+        # ------------------------------------------------------------
+        # Lightweight opponent aggression detection
+        # ------------------------------------------------------------
+        if opp.get("last_spell") == "fireball":
+            self._opp_fireballs += 1
  
-        # Early shield for tempo
-        if self._turn <= 2 and cd["shield"] == 0 and mana >= 20:
+        aggressive_opp = self._opp_fireballs >= 2
+ 
+        # ------------------------------------------------------------
+        # Adaptive heal threshold (KEY improvement vs Rade)
+        # ------------------------------------------------------------
+        if self._turn < 10:
+            heal_threshold = 40
+        elif self._turn < 20:
+            heal_threshold = 55
+        else:
+            heal_threshold = 70
+ 
+        # ============================================================
+        # PHASE 0 — HARD SURVIVAL
+        # ============================================================
+        if hp <= 30 and cd["shield"] == 0 and mana >= 20:
             spell = {"name": "shield"}
  
-        # Preventive shield (beats fireball openers)
-        elif hp <= 65 and cd["shield"] == 0 and mana >= 20:
-            spell = {"name": "shield"}
- 
-        # Heal only when shield is not enough
-        elif hp <= 40 and cd["heal"] == 0 and mana >= 25:
+        elif hp <= heal_threshold and cd["heal"] == 0 and mana >= 25:
             spell = {"name": "heal"}
  
-        # Always maintain minion advantage
+        # ============================================================
+        # PHASE 1 — EARLY DEFENSIVE TEMPO
+        # ============================================================
+        elif self._turn <= 2 and cd["shield"] == 0 and mana >= 20:
+            spell = {"name": "shield"}
+ 
+        elif aggressive_opp and hp <= 75 and cd["shield"] == 0 and mana >= 20:
+            spell = {"name": "shield"}
+ 
         elif not own_minions and cd["summon"] == 0 and mana >= 45:
             spell = {"name": "summon"}
  
         # ============================================================
-        # PHASE 2 — DISTANCE COLLAPSE (mirror breaker)
+        # PHASE 2 — RESOURCE CONTROL
+        # ============================================================
+        elif artifacts and mana < 45:
+            a = nearest_artifact()
+            if cd["teleport"] == 0 and mana >= 40:
+                spell = {"name": "teleport", "target": a["position"]}
+            else:
+                move = self.move_toward(my_pos, a["position"])
+ 
+        # ============================================================
+        # PHASE 3 — PRESSURE / COLLAPSE
         # ============================================================
         elif (
             self._turn > 8
@@ -90,7 +122,7 @@ class UltimateBot(BotInterface):
             move = self.move_toward(my_pos, opp_pos)
  
         # ============================================================
-        # PHASE 3 — EXECUTION MODE (commit & kill)
+        # PHASE 4 — EXECUTION MODE
         # ============================================================
         elif (
             self._turn > 12
@@ -100,7 +132,7 @@ class UltimateBot(BotInterface):
             and hp >= 55
             and opp["hp"] <= hp + 10
         ):
-            if cd["fireball"] == 0 and opp["hp"] <= 35:
+            if cd["fireball"] == 0 and opp["hp"] <= 40:
                 spell = {"name": "fireball", "target": opp_pos}
             elif cd["melee_attack"] == 0 and manhattan(my_pos, opp_pos) == 1:
                 spell = {"name": "melee_attack", "target": opp_pos}
@@ -108,27 +140,19 @@ class UltimateBot(BotInterface):
                 move = self.move_toward(my_pos, opp_pos)
  
         # ============================================================
-        # PHASE 4 — RESOURCE CONTROL
-        # ============================================================
-        elif artifacts and mana < 45:
-            a = nearest_artifact()
-            if cd["teleport"] == 0 and mana >= 40:
-                spell = {"name": "teleport", "target": a["position"]}
-            else:
-                move = self.move_toward(my_pos, a["position"])
- 
-        # ============================================================
         # PHASE 5 — OPPORTUNISTIC DAMAGE
         # ============================================================
+        elif enemy_minions and cd["fireball"] == 0 and mana >= 45:
+            in_range = [m for m in enemy_minions if cheb(my_pos, m["position"]) <= 5]
+            if in_range:
+                target = min(in_range, key=lambda m: m["hp"])
+                spell = {"name": "fireball", "target": target["position"]}
+ 
         elif cd["melee_attack"] == 0 and manhattan(my_pos, opp_pos) == 1:
             spell = {"name": "melee_attack", "target": opp_pos}
  
-        elif cd["fireball"] == 0 and mana >= 45:
-            targets = enemy_minions + [opp]
-            in_range = [t for t in targets if cheb(my_pos, t["position"]) <= 5]
-            if in_range:
-                t = min(in_range, key=lambda x: x["hp"])
-                spell = {"name": "fireball", "target": t["position"]}
+        elif cd["fireball"] == 0 and mana >= 45 and dist <= 5:
+            spell = {"name": "fireball", "target": opp_pos}
  
         # ============================================================
         # PHASE 6 — POSITIONING / KITING
@@ -155,3 +179,4 @@ class UltimateBot(BotInterface):
             -1 if target[0] > start[0] else 1 if target[0] < start[0] else 0,
             -1 if target[1] > start[1] else 1 if target[1] < start[1] else 0,
         ]
+ 
