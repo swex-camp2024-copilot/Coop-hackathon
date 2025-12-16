@@ -2,12 +2,16 @@ from typing import List, Dict, Any, Tuple, Optional
 from collections import deque
 import json
 import os
+import random
 
 from bots.bot_interface import BotInterface
 
 
 class ArchmageBot(BotInterface):
     LEARNING_FILE = "bots/archmage_bot/learning_data.json"
+    ALPHA = 0.1   # Learning rate
+    GAMMA = 0.95  # Discount factor for future rewards
+    EPSILON = 0.02  # Exploration rate (2% random actions - reduced for better performance)
 
     def __init__(self) -> None:
         self.name_ = "Archmage"
@@ -15,9 +19,12 @@ class ArchmageBot(BotInterface):
         self._turn_count = 0
         self._last_hp = 100
         self._last_opp_hp = 100
+        self._last_my_pos: Optional[Tuple[int, int]] = None
+        self._last_opp_pos: Optional[Tuple[int, int]] = None
         self._game_history: List[Dict[str, Any]] = []
         self._learning_data = self._load_learning()
-        self._opponent_patterns: Dict[str, int] = {}
+        self._opp_move_history: List[Tuple[int, int]] = []
+        self._q_table: Dict[str, Dict[str, float]] = self._learning_data.get("q_table", {})
 
     @property
     def name(self) -> str:
@@ -40,10 +47,43 @@ class ArchmageBot(BotInterface):
     def _save_learning(self) -> None:
         try:
             os.makedirs(os.path.dirname(self.LEARNING_FILE), exist_ok=True)
+            self._learning_data["q_table"] = self._q_table
             with open(self.LEARNING_FILE, "w") as f:
                 json.dump(self._learning_data, f, indent=2)
         except Exception:
             pass
+
+    def _get_q_value(self, situation: str, action: str) -> float:
+        if situation not in self._q_table:
+            self._q_table[situation] = {}
+        return self._q_table[situation].get(action, 0.0)
+
+    def _update_q_value(self, situation: str, action: str, reward: float, next_situation: str) -> None:
+        if situation not in self._q_table:
+            self._q_table[situation] = {}
+        old_q = self._q_table[situation].get(action, 0.0)
+        max_next_q = max(self._q_table.get(next_situation, {}).values()) if self._q_table.get(next_situation) else 0.0
+        new_q = old_q + self.ALPHA * (reward + self.GAMMA * max_next_q - old_q)
+        self._q_table[situation][action] = new_q
+
+    def _predict_opponent_move(self, opp_pos: Tuple[int, int]) -> Optional[Tuple[int, int]]:
+        if len(self._opp_move_history) < 3:
+            return None
+        last_moves = self._opp_move_history[-3:]
+        if last_moves[-1] == last_moves[-2]:
+            dx, dy = last_moves[-1]
+            return (opp_pos[0] + dx, opp_pos[1] + dy)
+        return None
+
+    def _calculate_reward(self, hp: int, opp_hp: int, prev_hp: int, prev_opp_hp: int) -> float:
+        damage_dealt = max(0, prev_opp_hp - opp_hp)
+        damage_taken = max(0, prev_hp - hp)
+        reward = damage_dealt * 2.0 - damage_taken * 1.5
+        if opp_hp <= 0:
+            reward += 100.0
+        elif hp <= 0:
+            reward -= 100.0
+        return reward
 
     def _get_situation_key(self, hp: int, mana: int, opp_hp: int, dist: int) -> str:
         hp_cat = "crit" if hp <= 30 else ("low" if hp <= 60 else "ok")
@@ -108,14 +148,31 @@ class ArchmageBot(BotInterface):
         self._turn_count += 1
         damage_taken = max(0, self._last_hp - hp)
         opp_damage_taken = max(0, self._last_opp_hp - opp_hp)
+
+        if self._last_my_pos and self._last_opp_pos:
+            opp_dx = opp_pos[0] - self._last_opp_pos[0]
+            opp_dy = opp_pos[1] - self._last_opp_pos[1]
+            self._opp_move_history.append((opp_dx, opp_dy))
+            if len(self._opp_move_history) > 10:
+                self._opp_move_history = self._opp_move_history[-10:]
+
+            if len(self._game_history) > 0:
+                prev = self._game_history[-1]
+                reward = self._calculate_reward(hp, opp_hp, self._last_hp, self._last_opp_hp)
+                new_sit = self._get_situation_key(hp, mana, opp_hp, dist)
+                self._update_q_value(prev["situation"], prev["action"], reward, new_sit)
+
         self._last_hp = hp
         self._last_opp_hp = opp_hp
+        self._last_my_pos = my_pos
+        self._last_opp_pos = opp_pos
 
         own_minions = [m for m in minions if m["owner"] == me.get("name", self.name_)]
         enemy_minions = [m for m in minions if m["owner"] != me.get("name", self.name_)]
         hp_advantage = hp - opp_hp
 
         situation = self._get_situation_key(hp, mana, opp_hp, dist)
+        predicted_opp_pos = self._predict_opponent_move(opp_pos)
 
         def make_action(move: List[int], spell: Optional[Dict[str, Any]], action_name: str) -> Dict[str, Any]:
             self._record_action(situation, action_name, hp, opp_hp)
@@ -161,8 +218,9 @@ class ArchmageBot(BotInterface):
         # PRIORITY 5: FIREBALL (in range - even if shielded when we have HP advantage)
         if dist <= 5 and self.can_cast("fireball", me):
             if not opp_shielded or hp_advantage >= 20:
+                target = list(predicted_opp_pos) if predicted_opp_pos and self.get_dist(my_pos, predicted_opp_pos) <= 5 else list(opp_pos)
                 step = self.bfs_move(my_pos, opp_pos, state)
-                return make_action(step, {"name": "fireball", "target": list(opp_pos)}, "fireball")
+                return make_action(step, {"name": "fireball", "target": target}, "fireball")
 
         # PRIORITY 6: SUMMON MINION (no minion and enough mana)
         if len(own_minions) == 0 and self.can_cast("summon", me) and mana >= 60:
@@ -219,6 +277,21 @@ class ArchmageBot(BotInterface):
         if self.is_near_edge(my_pos, state):
             center = (4, 4)
             return make_action(self.bfs_move(my_pos, center, state), None, "avoid_edge")
+
+        # PRIORITY 13: Q-LEARNING EXPLORATION (epsilon-greedy)
+        if random.random() < self.EPSILON and self._turn_count > 5:
+            explore_actions = []
+            if self.can_cast("fireball", me) and dist <= 5:
+                explore_actions.append(("fireball", {"name": "fireball", "target": list(opp_pos)}))
+            if self.can_cast("heal", me) and hp < 90:
+                explore_actions.append(("heal", {"name": "heal"}))
+            if self.can_cast("summon", me) and len(own_minions) == 0:
+                sp = self.get_summon_position(my_pos, opp_pos, minions, state)
+                if sp:
+                    explore_actions.append(("summon", {"name": "summon", "target": sp}))
+            if explore_actions:
+                action_name, spell = random.choice(explore_actions)
+                return make_action([0, 0], spell, f"explore_{action_name}")
 
         return make_action([0, 0], None, "idle")
 
