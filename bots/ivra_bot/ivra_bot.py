@@ -4,9 +4,43 @@ from bots.bot_interface import BotInterface
 class IvraBot(BotInterface):
     def __init__(self):
         self._name = "IvraBot"
-        # Re-using sample assets for now, can be customized later if needed
-        self._sprite_path = "assets/wizards/sample_bot1.png" 
-        self._minion_sprite_path = "assets/minions/minion_1.png"
+        self._sprite_path = "assets/wizards/ivra_bot.svg"
+        self._minion_sprite_path = "assets/minions/ivra_minion.svg"
+
+        # Adaptiveness tuning
+        # Base EMA update rate; actual per-turn rate is adjusted dynamically based on signal strength.
+        # Lowered slightly to avoid overreacting vs high-volatility opponents.
+        self._base_adapt_rate = 0.11
+
+        # NEW: Opponent modeling - tracks opponent behavior across turns
+        self.opponent_profile = {
+            "aggression_score": 0.5,  # 0=defensive, 1=aggressive
+            "spell_usage": {"fireball": 0, "heal": 0, "shield": 0, "teleport": 0, "blink": 0, "summon": 0},
+            "avg_distance": 5.0,  # Average distance they maintain
+            "artifact_priority": 0.5,  # How much they prioritize artifacts
+            "mana_conservation": 0.5,  # How conservatively they use mana
+            "last_hp": 100,
+            "last_mana": 100,
+            "last_position": None,
+            "turns_observed": 0,
+            "damage_dealt_to_us": 0,
+            "times_healed": 0,
+            "times_used_shield": 0,
+            "total_distance_samples": 0,
+
+            # EMA signals (more adaptive, less noisy)
+            "ema_aggression": 0.5,
+            "ema_fireball_rate": 0.0,
+            "ema_heal_rate": 0.0,
+            "ema_shield_rate": 0.0,
+            "ema_mobility_rate": 0.0,
+            "ema_damage_to_us": 0.0,
+            "ema_dist_to_us": 5.0,
+            "_ema_cast_rate": 0.0,
+            "last_dist_to_us": None,
+            "last_turn_mana": None,
+            "last_turn_hp": None,
+        }
 
         # Adaptiveness tuning
         # Base EMA update rate; actual per-turn rate is adjusted dynamically based on signal strength.
