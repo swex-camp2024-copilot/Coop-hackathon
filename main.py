@@ -147,7 +147,12 @@ def discover_bots() -> list[BotInterface]:
 
                     # Find classes that inherit from BotInterface
                     for _name, obj in inspect.getmembers(module):
-                        if inspect.isclass(obj) and issubclass(obj, BotInterface) and obj.__module__ == module_path:
+                        if (
+                            inspect.isclass(obj)
+                            and issubclass(obj, BotInterface)
+                            and obj.__module__ == module_path
+                            and not inspect.isabstract(obj)
+                        ):
                             # Instantiate the bot and add to the list
                             bot_instance = obj()
                             bots.append(bot_instance)
@@ -298,7 +303,7 @@ def run_single_match(
         print(f"{bot2.name}: {stats['bot2_wins']} wins ({bot2_win_pct:.1f}%)")
         print(f"Draws: {stats['draws']} ({draws_pct:.1f}%)")
         print(f"Average match length: {avg_turns:.1f} turns")
-        
+
         # Display graph if requested
         if graph:
             display_match_graph(match_results, bot1.name, bot2.name)
@@ -306,7 +311,7 @@ def run_single_match(
 
 def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str):
     """Display a text-based graph showing wins/losses over the course of matches.
-    
+
     Args:
         match_results (list[str]): List of match results ('bot1', 'bot2', or 'draw')
         bot1_name (str): Name of the first bot
@@ -314,17 +319,17 @@ def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str
     """
     if not match_results:
         return
-    
+
     print("\n" + "=" * 80)
     print("MATCH PROGRESSION GRAPH - CUMULATIVE WINS OVER TIME")
     print("=" * 80)
-    
+
     # Calculate running wins for each bot
     bot1_running_wins = []
     bot2_running_wins = []
     bot1_wins = 0
     bot2_wins = 0
-    
+
     for result in match_results:
         if result == 'bot1':
             bot1_wins += 1
@@ -332,12 +337,12 @@ def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str
             bot2_wins += 1
         bot1_running_wins.append(bot1_wins)
         bot2_running_wins.append(bot2_wins)
-    
+
     # Determine graph dimensions
     max_wins = max(bot1_wins, bot2_wins, 1)
     graph_height = min(25, max_wins + 1)
     graph_width = len(match_results)
-    
+
     # Legend
     print(f"\nLegend:")
     print(f"  * = {bot1_name}")
@@ -346,7 +351,7 @@ def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str
     print()
     print(f"Y-Axis (↑) = Total Wins    X-Axis (→) = Match Number")
     print()
-    
+
     # Draw the graph from top to bottom
     for row in range(graph_height, -1, -1):
         # Y-axis label with better description
@@ -361,15 +366,15 @@ def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str
             print(f"    |", end="")
         else:
             print(f"{row:3d} |", end="")
-        
+
         # Plot points for each match
         for i in range(graph_width):
             bot1_val = bot1_running_wins[i]
             bot2_val = bot2_running_wins[i]
-            
+
             # Determine what character to display
             char = " "
-            
+
             if bot1_val == row and bot2_val == row:
                 char = "+"  # Tied
             elif bot1_val == row and bot2_val == row - 1:
@@ -380,15 +385,15 @@ def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str
                 char = "*"  # Bot1 at this level
             elif bot2_val == row:
                 char = "#"  # Bot2 at this level
-            
+
             print(char, end="")
-        
+
         print()  # New line
-    
+
     # X-axis
     print("    +" + "-" * graph_width)
     print("     ", end="")
-    
+
     # X-axis labels (match numbers) - show every 5th or 10th depending on width
     if graph_width <= 50:
         step = 5
@@ -396,7 +401,7 @@ def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str
         step = 10
     else:
         step = 20
-    
+
     for i in range(graph_width):
         match_num = i + 1
         if match_num == 1 or match_num % step == 0:
@@ -405,10 +410,10 @@ def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str
             print(num_str[0], end="")
         else:
             print(" ", end="")
-    
+
     print()
     print("     Matches →")
-    
+
     # Add detailed explanation
     print()
     print("=" * 80)
@@ -421,12 +426,12 @@ def display_match_graph(match_results: list[str], bot1_name: str, bot2_name: str
     print("• The lines climb UP as each bot wins more matches")
     print("• Flat sections = no wins (either draws or the other bot won)")
     print()
-    
+
     # Summary
     print(f"Final Scores:")
     print(f"  {bot1_name}: {bot1_wins} wins")
     print(f"  {bot2_name}: {bot2_wins} wins")
-    
+
     # Show who is leading
     if bot1_wins > bot2_wins:
         lead = bot1_wins - bot2_wins
