@@ -5,7 +5,7 @@ class UltimateBot(BotInterface):
     def __init__(self):
         self._name = "Ultimate Ninja"
         self._sprite_path = "assets/ninja/ultimate_ninja.png"
-        self._minion_sprite_path = "assets/minions/minion_ultimate.png"
+        self._minion_sprite_path = "assets/minions/ninja.png"
  
         self._turn = 0
         self._opp_fireballs = 0
