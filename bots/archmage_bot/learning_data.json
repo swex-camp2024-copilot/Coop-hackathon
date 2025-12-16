@@ -1,352 +1,372 @@
 {
-  "games": 350,
-  "wins": 289,
+  "games": 570,
+  "wins": 475,
   "situation_actions": {
     "ok_ok_ok_far": {
       "first_shield": {
-        "count": 4,
-        "wins": 4
+        "count": 7,
+        "wins": 7
       },
       "summon": {
-        "count": 626,
-        "wins": 426
+        "count": 979,
+        "wins": 690
       },
       "blink_artifact": {
-        "count": 239,
-        "wins": 161
+        "count": 359,
+        "wins": 238
       },
       "hunt_blink": {
-        "count": 1130,
-        "wins": 770
+        "count": 1719,
+        "wins": 1213
       },
       "move_artifact": {
-        "count": 888,
-        "wins": 537
+        "count": 1334,
+        "wins": 836
       },
       "hunt_move": {
-        "count": 606,
-        "wins": 383
+        "count": 919,
+        "wins": 607
       },
       "teleport_artifact": {
-        "count": 282,
-        "wins": 237
+        "count": 446,
+        "wins": 369
       },
       "kill_minion": {
-        "count": 54,
-        "wins": 31
+        "count": 79,
+        "wins": 41
       },
       "aggressive_blink": {
-        "count": 32,
-        "wins": 28
+        "count": 52,
+        "wins": 45
       },
       "aggressive_hunt": {
-        "count": 29,
-        "wins": 25
+        "count": 51,
+        "wins": 41
       },
       "proactive_shield": {
         "count": 3,
         "wins": 2
       },
       "heal": {
-        "count": 10,
-        "wins": 5
+        "count": 49,
+        "wins": 34
       }
     },
     "ok_ok_ok_close": {
       "maintain_dist_back": {
-        "count": 159,
-        "wins": 110
+        "count": 424,
+        "wins": 294
       },
       "avoid_edge": {
         "count": 19,
         "wins": 6
       },
       "melee_opp": {
-        "count": 82,
-        "wins": 73
+        "count": 134,
+        "wins": 118
       },
       "fireball": {
-        "count": 262,
-        "wins": 200
+        "count": 472,
+        "wins": 355
       },
       "blink_artifact": {
-        "count": 145,
-        "wins": 106
+        "count": 253,
+        "wins": 192
       },
       "summon": {
-        "count": 160,
-        "wins": 106
+        "count": 339,
+        "wins": 240
       },
       "move_artifact": {
-        "count": 321,
-        "wins": 204
+        "count": 542,
+        "wins": 362
       },
       "teleport_artifact": {
-        "count": 58,
-        "wins": 42
+        "count": 92,
+        "wins": 68
       },
       "kill_minion": {
-        "count": 401,
-        "wins": 305
+        "count": 735,
+        "wins": 581
       },
       "aggressive_blink": {
-        "count": 18,
-        "wins": 17
+        "count": 21,
+        "wins": 19
       },
       "idle": {
-        "count": 45,
-        "wins": 26
+        "count": 47,
+        "wins": 27
       },
       "explore_fireball": {
         "count": 3,
         "wins": 1
       },
       "heal": {
-        "count": 1,
-        "wins": 1
+        "count": 9,
+        "wins": 7
       },
       "proactive_shield": {
-        "count": 3,
-        "wins": 2
+        "count": 5,
+        "wins": 3
+      },
+      "aggressive_approach": {
+        "count": 63,
+        "wins": 50
       }
     },
     "ok_ok_low_close": {
       "fireball": {
-        "count": 378,
-        "wins": 322
+        "count": 624,
+        "wins": 536
       },
       "melee_opp": {
-        "count": 210,
-        "wins": 197
+        "count": 312,
+        "wins": 294
       },
       "blink_artifact": {
-        "count": 39,
-        "wins": 32
+        "count": 84,
+        "wins": 72
       },
       "kill_minion": {
-        "count": 88,
-        "wins": 69
+        "count": 164,
+        "wins": 136
       },
       "teleport_artifact": {
-        "count": 15,
-        "wins": 12
+        "count": 26,
+        "wins": 19
       },
       "summon": {
-        "count": 36,
-        "wins": 34
+        "count": 53,
+        "wins": 48
       },
       "heal": {
-        "count": 24,
-        "wins": 20
+        "count": 42,
+        "wins": 34
       },
       "move_artifact": {
-        "count": 75,
-        "wins": 68
+        "count": 111,
+        "wins": 101
       },
       "aggressive_blink": {
-        "count": 16,
-        "wins": 13
+        "count": 17,
+        "wins": 14
       },
       "maintain_dist_back": {
-        "count": 22,
-        "wins": 22
+        "count": 40,
+        "wins": 40
       }
     },
     "ok_ok_ok_mid": {
       "kill_minion": {
-        "count": 404,
-        "wins": 294
+        "count": 682,
+        "wins": 502
       },
       "fireball": {
-        "count": 659,
-        "wins": 463
+        "count": 1025,
+        "wins": 719
       },
       "summon": {
-        "count": 593,
-        "wins": 346
+        "count": 872,
+        "wins": 498
       },
       "idle": {
-        "count": 1530,
-        "wins": 953
+        "count": 1650,
+        "wins": 994
       },
       "move_artifact": {
-        "count": 1050,
-        "wins": 608
+        "count": 1550,
+        "wins": 915
       },
       "teleport_artifact": {
-        "count": 105,
-        "wins": 78
+        "count": 154,
+        "wins": 121
       },
       "blink_artifact": {
-        "count": 313,
-        "wins": 204
+        "count": 471,
+        "wins": 315
       },
       "avoid_edge": {
-        "count": 251,
-        "wins": 143
+        "count": 265,
+        "wins": 149
       },
       "heal": {
-        "count": 33,
-        "wins": 20
+        "count": 106,
+        "wins": 67
       },
       "explore_heal": {
         "count": 7,
         "wins": 5
       },
       "explore_fireball": {
-        "count": 30,
-        "wins": 20
+        "count": 32,
+        "wins": 21
       },
       "proactive_shield": {
-        "count": 5,
-        "wins": 2
+        "count": 11,
+        "wins": 8
       },
       "aggressive_blink": {
-        "count": 13,
-        "wins": 11
+        "count": 19,
+        "wins": 15
+      },
+      "aggressive_approach": {
+        "count": 635,
+        "wins": 455
       }
     },
     "ok_low_ok_mid": {
       "move_artifact": {
-        "count": 411,
-        "wins": 223
+        "count": 732,
+        "wins": 405
       },
       "fireball": {
-        "count": 131,
-        "wins": 90
+        "count": 247,
+        "wins": 159
       },
       "blink_artifact": {
-        "count": 171,
-        "wins": 105
+        "count": 330,
+        "wins": 186
       },
       "kill_minion": {
-        "count": 150,
-        "wins": 99
+        "count": 286,
+        "wins": 162
       },
       "teleport_artifact": {
-        "count": 74,
-        "wins": 52
+        "count": 150,
+        "wins": 104
       },
       "heal": {
-        "count": 6,
-        "wins": 4
+        "count": 47,
+        "wins": 24
       },
       "proactive_shield": {
         "count": 7,
         "wins": 6
       },
       "idle": {
-        "count": 5,
-        "wins": 5
+        "count": 11,
+        "wins": 11
+      },
+      "avoid_edge": {
+        "count": 1,
+        "wins": 1
       }
     },
     "ok_low_ok_close": {
       "move_artifact": {
-        "count": 230,
-        "wins": 155
+        "count": 461,
+        "wins": 307
       },
       "blink_artifact": {
-        "count": 164,
-        "wins": 117
+        "count": 334,
+        "wins": 226
       },
       "kill_minion": {
-        "count": 271,
-        "wins": 186
+        "count": 448,
+        "wins": 307
       },
       "teleport_artifact": {
-        "count": 47,
-        "wins": 36
+        "count": 103,
+        "wins": 70
       },
       "fireball": {
-        "count": 100,
-        "wins": 68
+        "count": 184,
+        "wins": 119
       },
       "heal": {
-        "count": 6,
-        "wins": 6
+        "count": 17,
+        "wins": 12
       },
       "melee_opp": {
-        "count": 31,
-        "wins": 23
+        "count": 46,
+        "wins": 31
       },
       "maintain_dist_back": {
-        "count": 9,
-        "wins": 8
+        "count": 20,
+        "wins": 16
       },
       "aggressive_hunt": {
-        "count": 1,
+        "count": 2,
         "wins": 0
       },
       "proactive_shield": {
         "count": 4,
         "wins": 1
+      },
+      "idle": {
+        "count": 3,
+        "wins": 2
       }
     },
     "ok_low_low_close": {
       "fireball": {
-        "count": 228,
-        "wins": 198
+        "count": 356,
+        "wins": 307
       },
       "blink_artifact": {
-        "count": 210,
-        "wins": 174
+        "count": 342,
+        "wins": 285
       },
       "teleport_artifact": {
-        "count": 59,
-        "wins": 51
+        "count": 100,
+        "wins": 82
       },
       "move_artifact": {
-        "count": 320,
-        "wins": 273
+        "count": 550,
+        "wins": 443
       },
       "kill_minion": {
-        "count": 92,
-        "wins": 78
+        "count": 147,
+        "wins": 117
       },
       "melee_opp": {
-        "count": 125,
-        "wins": 107
+        "count": 190,
+        "wins": 157
       },
       "heal": {
-        "count": 22,
-        "wins": 19
+        "count": 43,
+        "wins": 34
       },
       "aggressive_blink": {
         "count": 4,
         "wins": 3
       },
       "maintain_dist_back": {
+        "count": 3,
+        "wins": 2
+      },
+      "proactive_shield": {
         "count": 1,
         "wins": 1
       }
     },
     "ok_low_low_mid": {
       "move_artifact": {
-        "count": 157,
-        "wins": 133
+        "count": 240,
+        "wins": 188
       },
       "fireball": {
-        "count": 126,
-        "wins": 111
+        "count": 208,
+        "wins": 167
       },
       "heal": {
-        "count": 17,
-        "wins": 13
+        "count": 27,
+        "wins": 17
       },
       "teleport_artifact": {
-        "count": 24,
-        "wins": 19
+        "count": 35,
+        "wins": 26
       },
       "blink_artifact": {
-        "count": 63,
-        "wins": 52
+        "count": 114,
+        "wins": 86
       },
       "kill_minion": {
-        "count": 16,
-        "wins": 9
+        "count": 37,
+        "wins": 17
       },
       "aggressive_blink": {
-        "count": 1,
+        "count": 2,
         "wins": 1
       },
       "aggressive_hunt": {
@@ -356,116 +376,120 @@
     },
     "ok_ok_low_mid": {
       "summon": {
-        "count": 10,
-        "wins": 8
+        "count": 19,
+        "wins": 15
       },
       "fireball": {
-        "count": 235,
-        "wins": 205
+        "count": 350,
+        "wins": 295
       },
       "move_artifact": {
-        "count": 21,
-        "wins": 18
+        "count": 28,
+        "wins": 25
       },
       "kill_minion": {
-        "count": 14,
+        "count": 20,
         "wins": 12
       },
       "blink_artifact": {
-        "count": 11,
-        "wins": 9
+        "count": 16,
+        "wins": 13
       },
       "aggressive_blink": {
-        "count": 29,
-        "wins": 26
+        "count": 38,
+        "wins": 35
       },
       "heal": {
-        "count": 20,
-        "wins": 16
+        "count": 25,
+        "wins": 20
       },
       "teleport_artifact": {
-        "count": 3,
-        "wins": 3
+        "count": 5,
+        "wins": 5
       }
     },
     "ok_low_ok_far": {
       "blink_artifact": {
-        "count": 126,
-        "wins": 65
+        "count": 229,
+        "wins": 122
       },
       "move_artifact": {
-        "count": 265,
-        "wins": 140
+        "count": 481,
+        "wins": 263
       },
       "teleport_artifact": {
-        "count": 46,
-        "wins": 30
+        "count": 87,
+        "wins": 54
       },
       "aggressive_hunt": {
-        "count": 3,
-        "wins": 2
+        "count": 4,
+        "wins": 3
       },
       "hunt_blink": {
-        "count": 12,
-        "wins": 11
+        "count": 17,
+        "wins": 14
       },
       "kill_minion": {
-        "count": 20,
-        "wins": 9
+        "count": 35,
+        "wins": 15
       },
       "hunt_move": {
-        "count": 2,
-        "wins": 2
+        "count": 3,
+        "wins": 3
       },
       "aggressive_blink": {
-        "count": 1,
+        "count": 3,
         "wins": 1
       },
       "heal": {
-        "count": 8,
-        "wins": 3
+        "count": 32,
+        "wins": 17
       }
     },
     "low_low_low_close": {
       "kill_minion": {
-        "count": 41,
-        "wins": 35
+        "count": 60,
+        "wins": 52
       },
       "proactive_shield": {
-        "count": 15,
-        "wins": 14
+        "count": 25,
+        "wins": 23
       },
       "teleport_artifact": {
-        "count": 13,
-        "wins": 10
+        "count": 19,
+        "wins": 16
       },
       "move_artifact": {
-        "count": 60,
-        "wins": 56
+        "count": 72,
+        "wins": 68
       },
       "blink_artifact": {
-        "count": 41,
-        "wins": 40
+        "count": 50,
+        "wins": 48
       },
       "heal": {
         "count": 3,
         "wins": 3
       },
       "fireball": {
-        "count": 26,
-        "wins": 25
+        "count": 33,
+        "wins": 31
       },
       "emergency_teleport": {
         "count": 1,
         "wins": 1
       },
       "melee_opp": {
-        "count": 28,
-        "wins": 25
+        "count": 42,
+        "wins": 36
       },
       "emergency_heal": {
         "count": 1,
         "wins": 1
+      },
+      "heal_priority": {
+        "count": 3,
+        "wins": 2
       }
     },
     "low_ok_low_far": {
@@ -474,42 +498,50 @@
         "wins": 9
       },
       "kill_minion": {
-        "count": 5,
-        "wins": 3
+        "count": 7,
+        "wins": 5
       },
       "teleport_artifact": {
-        "count": 2,
-        "wins": 2
+        "count": 3,
+        "wins": 3
       },
       "blink_artifact": {
         "count": 1,
         "wins": 1
+      },
+      "heal_priority": {
+        "count": 4,
+        "wins": 3
+      },
+      "move_artifact": {
+        "count": 2,
+        "wins": 2
       }
     },
     "ok_low_low_far": {
       "blink_artifact": {
-        "count": 75,
-        "wins": 62
-      },
-      "move_artifact": {
-        "count": 100,
+        "count": 107,
         "wins": 84
       },
+      "move_artifact": {
+        "count": 162,
+        "wins": 131
+      },
       "heal": {
-        "count": 18,
-        "wins": 15
+        "count": 35,
+        "wins": 29
       },
       "teleport_artifact": {
-        "count": 17,
-        "wins": 13
+        "count": 33,
+        "wins": 22
       },
       "kill_minion": {
-        "count": 2,
+        "count": 3,
         "wins": 2
       },
       "aggressive_blink": {
-        "count": 1,
-        "wins": 1
+        "count": 2,
+        "wins": 2
       },
       "aggressive_hunt": {
         "count": 1,
@@ -522,73 +554,73 @@
     },
     "ok_ok_low_far": {
       "heal": {
-        "count": 46,
-        "wins": 38
+        "count": 66,
+        "wins": 54
       },
       "blink_artifact": {
-        "count": 36,
-        "wins": 29
+        "count": 57,
+        "wins": 46
       },
       "move_artifact": {
-        "count": 75,
-        "wins": 59
+        "count": 121,
+        "wins": 96
       },
       "summon": {
-        "count": 30,
-        "wins": 23
+        "count": 50,
+        "wins": 34
       },
       "aggressive_blink": {
-        "count": 84,
-        "wins": 71
+        "count": 124,
+        "wins": 110
       },
       "aggressive_hunt": {
-        "count": 71,
-        "wins": 62
+        "count": 102,
+        "wins": 93
       },
       "teleport_artifact": {
-        "count": 7,
-        "wins": 4
+        "count": 15,
+        "wins": 10
       },
       "kill_minion": {
-        "count": 2,
-        "wins": 1
+        "count": 4,
+        "wins": 2
       }
     },
     "low_ok_ok_close": {
       "kill_minion": {
-        "count": 120,
-        "wins": 84
+        "count": 195,
+        "wins": 131
       },
       "blink_artifact": {
-        "count": 52,
-        "wins": 41
+        "count": 71,
+        "wins": 55
       },
       "move_artifact": {
-        "count": 88,
-        "wins": 70
+        "count": 119,
+        "wins": 93
       },
       "summon": {
-        "count": 36,
-        "wins": 19
+        "count": 51,
+        "wins": 30
       },
       "proactive_shield": {
-        "count": 100,
-        "wins": 74
+        "count": 163,
+        "wins": 130
       },
       "teleport_artifact": {
-        "count": 37,
-        "wins": 32
+        "count": 55,
+        "wins": 45
       },
       "fireball": {
-        "count": 41,
-        "wins": 33
+        "count": 72,
+        "wins": 62
       },
       "melee_opp": {
-        "count": 35,
-        "wins": 29
+        "count": 47,
+        "wins": 37
       },
       "emergency_shield": {
-        "count": 4,
+        "count": 5,
         "wins": 1
       },
       "emergency_blink": {
@@ -600,36 +632,44 @@
         "wins": 2
       },
       "emergency_heal": {
-        "count": 1,
-        "wins": 1
+        "count": 7,
+        "wins": 4
+      },
+      "heal_priority": {
+        "count": 40,
+        "wins": 29
       }
     },
     "crit_ok_ok_close": {
       "emergency_shield": {
-        "count": 24,
-        "wins": 14
+        "count": 27,
+        "wins": 15
       },
       "emergency_heal": {
-        "count": 33,
-        "wins": 22
+        "count": 49,
+        "wins": 35
       },
       "emergency_blink": {
         "count": 4,
         "wins": 1
       },
       "emergency_flee": {
+        "count": 1,
+        "wins": 0
+      },
+      "emergency_teleport": {
         "count": 1,
         "wins": 0
       }
     },
     "crit_ok_ok_mid": {
       "emergency_heal": {
-        "count": 14,
-        "wins": 4
+        "count": 18,
+        "wins": 6
       },
       "emergency_shield": {
-        "count": 7,
-        "wins": 3
+        "count": 8,
+        "wins": 4
       },
       "emergency_flee": {
         "count": 2,
@@ -640,71 +680,75 @@
         "wins": 0
       },
       "emergency_teleport": {
-        "count": 1,
+        "count": 2,
         "wins": 0
       }
     },
     "low_ok_ok_mid": {
       "blink_artifact": {
-        "count": 10,
-        "wins": 6
+        "count": 12,
+        "wins": 8
       },
       "teleport_artifact": {
-        "count": 9,
-        "wins": 7
-      },
-      "proactive_shield": {
-        "count": 83,
-        "wins": 71
-      },
-      "kill_minion": {
-        "count": 49,
-        "wins": 24
-      },
-      "heal": {
-        "count": 99,
-        "wins": 71
-      },
-      "fireball": {
-        "count": 39,
-        "wins": 33
-      },
-      "summon": {
-        "count": 25,
+        "count": 14,
         "wins": 10
       },
+      "proactive_shield": {
+        "count": 147,
+        "wins": 121
+      },
+      "kill_minion": {
+        "count": 77,
+        "wins": 40
+      },
+      "heal": {
+        "count": 100,
+        "wins": 72
+      },
+      "fireball": {
+        "count": 64,
+        "wins": 56
+      },
+      "summon": {
+        "count": 28,
+        "wins": 11
+      },
       "move_artifact": {
-        "count": 21,
-        "wins": 14
+        "count": 26,
+        "wins": 17
       },
       "emergency_heal": {
-        "count": 4,
-        "wins": 4
+        "count": 7,
+        "wins": 7
       },
       "emergency_shield": {
         "count": 2,
         "wins": 1
       },
       "emergency_teleport": {
-        "count": 1,
+        "count": 2,
         "wins": 0
+      },
+      "heal_priority": {
+        "count": 58,
+        "wins": 40
       }
     },
     "low_low_ok_far": {
       "kill_minion": {
-        "count": 10,
-        "wins": 8
+        "count": 12,
+        "wins": 10
       },
       "heal": {
         "count": 20,
         "wins": 13
       },
       "blink_artifact": {
-        "count": 12,
-        "wins": 9
+        "count": 15,
+        "wins": 11
       },
       "move_artifact": {
-        "count": 16,
+        "count": 17,
         "wins": 11
       },
       "emergency_flee": {
@@ -716,8 +760,12 @@
         "wins": 1
       },
       "teleport_artifact": {
-        "count": 3,
-        "wins": 2
+        "count": 4,
+        "wins": 3
+      },
+      "heal_priority": {
+        "count": 5,
+        "wins": 3
       }
     },
     "low_ok_ok_far": {
@@ -726,8 +774,8 @@
         "wins": 22
       },
       "kill_minion": {
-        "count": 13,
-        "wins": 8
+        "count": 16,
+        "wins": 11
       },
       "emergency_teleport": {
         "count": 1,
@@ -738,92 +786,100 @@
         "wins": 2
       },
       "summon": {
-        "count": 6,
-        "wins": 4
+        "count": 7,
+        "wins": 5
       },
       "proactive_shield": {
         "count": 4,
         "wins": 1
       },
       "teleport_artifact": {
-        "count": 2,
-        "wins": 2
+        "count": 3,
+        "wins": 3
       },
       "blink_artifact": {
         "count": 2,
         "wins": 1
+      },
+      "heal_priority": {
+        "count": 7,
+        "wins": 5
       }
     },
     "low_low_ok_close": {
       "blink_artifact": {
-        "count": 28,
-        "wins": 13
+        "count": 43,
+        "wins": 24
       },
       "kill_minion": {
-        "count": 49,
-        "wins": 30
+        "count": 84,
+        "wins": 51
       },
       "proactive_shield": {
-        "count": 15,
-        "wins": 9
+        "count": 25,
+        "wins": 17
       },
       "teleport_artifact": {
-        "count": 29,
-        "wins": 19
+        "count": 35,
+        "wins": 25
       },
       "move_artifact": {
-        "count": 49,
-        "wins": 26
+        "count": 78,
+        "wins": 46
       },
       "melee_opp": {
-        "count": 9,
-        "wins": 5
+        "count": 17,
+        "wins": 13
       },
       "emergency_shield": {
         "count": 2,
         "wins": 2
       },
       "fireball": {
-        "count": 2,
-        "wins": 2
+        "count": 6,
+        "wins": 4
       },
       "emergency_heal": {
         "count": 4,
         "wins": 2
+      },
+      "heal_priority": {
+        "count": 14,
+        "wins": 9
       }
     },
     "low_ok_low_close": {
       "kill_minion": {
-        "count": 67,
-        "wins": 54
+        "count": 132,
+        "wins": 103
       },
       "move_artifact": {
-        "count": 41,
-        "wins": 38
+        "count": 64,
+        "wins": 58
       },
       "summon": {
-        "count": 23,
-        "wins": 19
+        "count": 27,
+        "wins": 23
       },
       "teleport_artifact": {
-        "count": 18,
-        "wins": 17
+        "count": 30,
+        "wins": 26
       },
       "fireball": {
-        "count": 74,
-        "wins": 71
+        "count": 136,
+        "wins": 129
       },
       "proactive_shield": {
-        "count": 46,
-        "wins": 41
+        "count": 85,
+        "wins": 72
       },
       "blink_artifact": {
-        "count": 29,
-        "wins": 27
+        "count": 52,
+        "wins": 47
       },
       "melee_opp": {
-        "count": 74,
-        "wins": 70
+        "count": 110,
+        "wins": 106
       },
       "heal": {
         "count": 3,
@@ -838,14 +894,18 @@
         "wins": 1
       },
       "emergency_heal": {
-        "count": 1,
-        "wins": 1
+        "count": 2,
+        "wins": 2
+      },
+      "heal_priority": {
+        "count": 11,
+        "wins": 10
       }
     },
     "crit_ok_low_close": {
       "emergency_heal": {
-        "count": 5,
-        "wins": 2
+        "count": 10,
+        "wins": 5
       },
       "emergency_shield": {
         "count": 2,
@@ -862,62 +922,66 @@
     },
     "low_ok_low_mid": {
       "kill_minion": {
-        "count": 9,
-        "wins": 8
+        "count": 21,
+        "wins": 19
       },
       "fireball": {
-        "count": 6,
-        "wins": 6
+        "count": 10,
+        "wins": 10
       },
       "heal": {
         "count": 14,
         "wins": 12
       },
       "summon": {
-        "count": 6,
-        "wins": 5
+        "count": 7,
+        "wins": 6
       },
       "proactive_shield": {
-        "count": 4,
-        "wins": 2
+        "count": 7,
+        "wins": 5
       },
       "teleport_artifact": {
-        "count": 2,
-        "wins": 2
+        "count": 3,
+        "wins": 3
       },
       "blink_artifact": {
-        "count": 1,
-        "wins": 1
+        "count": 2,
+        "wins": 2
       },
       "move_artifact": {
         "count": 1,
         "wins": 1
+      },
+      "heal_priority": {
+        "count": 9,
+        "wins": 8
       }
     },
     "low_low_low_mid": {
       "fireball": {
-        "count": 10,
-        "wins": 10
+        "count": 13,
+        "wins": 13
       },
       "blink_artifact": {
-        "count": 3,
-        "wins": 2
+        "count": 5,
+        "wins": 4
       },
       "move_artifact": {
-        "count": 14,
-        "wins": 12
+        "count": 20,
+        "wins": 18
       },
       "heal": {
         "count": 11,
         "wins": 8
       },
       "teleport_artifact": {
-        "count": 1,
-        "wins": 1
+        "count": 2,
+        "wins": 2
       },
       "kill_minion": {
-        "count": 3,
-        "wins": 2
+        "count": 11,
+        "wins": 7
       },
       "emergency_teleport": {
         "count": 1,
@@ -928,30 +992,34 @@
         "wins": 0
       },
       "proactive_shield": {
-        "count": 1,
+        "count": 2,
         "wins": 1
+      },
+      "heal_priority": {
+        "count": 3,
+        "wins": 2
       }
     },
     "low_low_ok_mid": {
       "kill_minion": {
+        "count": 44,
+        "wins": 24
+      },
+      "teleport_artifact": {
+        "count": 12,
+        "wins": 9
+      },
+      "heal": {
+        "count": 49,
+        "wins": 33
+      },
+      "proactive_shield": {
         "count": 28,
         "wins": 19
       },
-      "teleport_artifact": {
-        "count": 8,
-        "wins": 5
-      },
-      "heal": {
-        "count": 46,
-        "wins": 31
-      },
-      "proactive_shield": {
-        "count": 15,
-        "wins": 11
-      },
       "move_artifact": {
-        "count": 27,
-        "wins": 16
+        "count": 45,
+        "wins": 28
       },
       "emergency_blink": {
         "count": 1,
@@ -962,26 +1030,34 @@
         "wins": 1
       },
       "blink_artifact": {
-        "count": 10,
-        "wins": 5
+        "count": 23,
+        "wins": 12
       },
       "fireball": {
-        "count": 9,
-        "wins": 4
+        "count": 12,
+        "wins": 6
       },
       "emergency_heal": {
-        "count": 1,
+        "count": 3,
         "wins": 1
+      },
+      "heal_priority": {
+        "count": 24,
+        "wins": 11
+      },
+      "emergency_teleport": {
+        "count": 1,
+        "wins": 0
       }
     },
     "crit_low_ok_close": {
       "emergency_heal": {
-        "count": 6,
-        "wins": 3
+        "count": 13,
+        "wins": 9
       },
       "emergency_teleport": {
-        "count": 3,
-        "wins": 2
+        "count": 6,
+        "wins": 5
       },
       "emergency_blink": {
         "count": 4,
@@ -1008,6 +1084,10 @@
       "move_artifact": {
         "count": 5,
         "wins": 5
+      },
+      "heal_priority": {
+        "count": 2,
+        "wins": 1
       }
     },
     "crit_low_low_close": {
@@ -1016,8 +1096,8 @@
         "wins": 1
       },
       "emergency_heal": {
-        "count": 4,
-        "wins": 3
+        "count": 5,
+        "wins": 4
       },
       "emergency_flee": {
         "count": 1,
@@ -1052,12 +1132,12 @@
     },
     "crit_low_ok_far": {
       "emergency_heal": {
-        "count": 5,
-        "wins": 1
+        "count": 7,
+        "wins": 2
       },
       "emergency_teleport": {
-        "count": 5,
-        "wins": 2
+        "count": 6,
+        "wins": 3
       },
       "emergency_flee": {
         "count": 10,
@@ -1078,8 +1158,8 @@
         "wins": 3
       },
       "emergency_teleport": {
-        "count": 1,
-        "wins": 1
+        "count": 2,
+        "wins": 2
       }
     },
     "crit_low_ok_mid": {
@@ -1088,7 +1168,7 @@
         "wins": 1
       },
       "emergency_shield": {
-        "count": 3,
+        "count": 5,
         "wins": 2
       },
       "emergency_teleport": {
@@ -1110,6 +1190,14 @@
         "wins": 1
       },
       "emergency_teleport": {
+        "count": 2,
+        "wins": 2
+      },
+      "emergency_heal": {
+        "count": 2,
+        "wins": 2
+      },
+      "emergency_shield": {
         "count": 1,
         "wins": 1
       }
@@ -1118,278 +1206,299 @@
   "opponent_tendencies": {},
   "q_table": {
     "ok_ok_ok_far": {
-      "first_shield": 18.79335744764462,
-      "summon": 127.04673734129794,
-      "blink_artifact": 134.8259154836931,
-      "hunt_blink": 131.8813770502875,
-      "move_artifact": 133.2530856302571,
-      "hunt_move": 136.17378905938114,
-      "teleport_artifact": 128.78896878993663,
-      "aggressive_blink": 106.95609479582107,
-      "aggressive_hunt": 101.61211417721498,
-      "kill_minion": 101.34857562887792,
+      "first_shield": 51.49427308044484,
+      "summon": 162.25560287040346,
+      "blink_artifact": 167.9420360291708,
+      "hunt_blink": 167.38823261600382,
+      "move_artifact": 168.61183328489457,
+      "hunt_move": 174.25011281149185,
+      "teleport_artifact": 172.42388107964007,
+      "aggressive_blink": 148.93198160400004,
+      "aggressive_hunt": 150.3739696827614,
+      "kill_minion": 142.19791594008984,
       "proactive_shield": 24.90012430157033,
-      "heal": 66.35029392969204
+      "heal": 161.25447800958116
     },
     "ok_ok_ok_close": {
-      "maintain_dist_back": 134.9339705369025,
-      "teleport_artifact": 117.94678919064768,
-      "fireball": 153.7010407746719,
-      "blink_artifact": 134.0896522423445,
-      "move_artifact": 143.2897399457376,
-      "summon": 112.19211058376169,
-      "kill_minion": 114.75854514976156,
-      "melee_opp": 131.97816200146667,
+      "maintain_dist_back": 182.95987752799405,
+      "teleport_artifact": 161.24045247883393,
+      "fireball": 179.6748567098183,
+      "blink_artifact": 174.21733586287033,
+      "move_artifact": 188.91986809942043,
+      "summon": 162.79049207341046,
+      "kill_minion": 169.15606168814827,
+      "melee_opp": 187.82463220115253,
       "avoid_edge": 96.21504277931257,
-      "idle": 116.20092201443555,
-      "aggressive_blink": 89.18167193778429,
+      "idle": 123.74360424104701,
+      "aggressive_blink": 115.36549953611255,
       "explore_fireball": 33.856613849397476,
-      "heal": 15.209481617273106,
-      "proactive_shield": 26.607605451682524
+      "heal": 99.31596763894011,
+      "proactive_shield": 46.900409698889135,
+      "aggressive_approach": 184.12479414553314
     },
     "ok_ok_ok_mid": {
-      "fireball": 143.71759156845155,
-      "move_artifact": 138.7531074469787,
-      "idle": 137.32228554328074,
-      "blink_artifact": 127.21685277152537,
-      "kill_minion": 123.9510635213675,
-      "summon": 123.5737634336753,
-      "avoid_edge": 133.20015894436978,
-      "teleport_artifact": 127.28782284875349,
+      "fireball": 178.4436386110738,
+      "move_artifact": 174.40107307709852,
+      "idle": 146.4656036965256,
+      "blink_artifact": 173.645807766877,
+      "kill_minion": 162.28259518908595,
+      "summon": 166.46366109914348,
+      "avoid_edge": 141.3846028220663,
+      "teleport_artifact": 163.67400524481025,
       "explore_heal": 49.13823371150931,
-      "explore_fireball": 102.45720889814261,
-      "heal": 114.3471601439776,
-      "proactive_shield": 46.39954160264489,
-      "aggressive_blink": 98.08460463250482
+      "explore_fireball": 109.08621783826102,
+      "heal": 171.94779152562924,
+      "proactive_shield": 99.8046233794914,
+      "aggressive_blink": 128.07950215716113,
+      "aggressive_approach": 177.66600869337083
     },
     "ok_low_ok_close": {
-      "fireball": 116.41773046130051,
-      "move_artifact": 121.01784822007815,
-      "teleport_artifact": 102.9020047830437,
-      "blink_artifact": 105.45358372876896,
-      "kill_minion": 95.39732357102716,
-      "melee_opp": 115.72997295163239,
-      "aggressive_hunt": 5.864858146506871,
-      "maintain_dist_back": 49.102562464839224,
-      "heal": 24.490855017589958,
-      "proactive_shield": 35.39849698563836
+      "fireball": 166.3635978391213,
+      "move_artifact": 173.42228774630155,
+      "teleport_artifact": 166.34510691040543,
+      "blink_artifact": 162.701486863772,
+      "kill_minion": 151.40947551772456,
+      "melee_opp": 154.1224987482216,
+      "aggressive_hunt": 21.202187774091673,
+      "maintain_dist_back": 114.77710618964478,
+      "heal": 116.3036047987602,
+      "proactive_shield": 35.39849698563836,
+      "idle": 39.69938361867071
     },
     "ok_low_low_close": {
-      "blink_artifact": 124.5409327235291,
-      "move_artifact": 128.04025284442383,
-      "fireball": 117.77165125665506,
-      "kill_minion": 90.82608591667147,
-      "heal": 84.78890772023577,
-      "melee_opp": 131.47124060853764,
-      "teleport_artifact": 107.28290707107668,
-      "aggressive_blink": 32.745924107376155
+      "blink_artifact": 170.4401580862843,
+      "move_artifact": 176.7054123299112,
+      "fireball": 177.88134682933457,
+      "kill_minion": 126.60553427817584,
+      "heal": 150.25576796004367,
+      "melee_opp": 175.7299744073406,
+      "teleport_artifact": 152.9917184532912,
+      "aggressive_blink": 32.745924107376155,
+      "proactive_shield": 12.679464128245991,
+      "maintain_dist_back": 29.760205641813343
     },
     "ok_ok_low_close": {
-      "melee_opp": 138.35712534249566,
-      "fireball": 131.62458069055094,
-      "blink_artifact": 108.2932671950206,
-      "heal": 104.21320349669581,
-      "move_artifact": 134.01510157013104,
-      "maintain_dist_back": 95.03140345197076,
-      "kill_minion": 98.0650837742044,
-      "aggressive_blink": 95.6495822941364,
-      "teleport_artifact": 74.21872144934846,
-      "summon": 101.74856841144633
+      "melee_opp": 176.41904936984,
+      "fireball": 187.04460178161108,
+      "blink_artifact": 168.00806033522517,
+      "heal": 160.35884452199986,
+      "move_artifact": 167.02673976794026,
+      "maintain_dist_back": 154.63447197937933,
+      "kill_minion": 151.40240302204995,
+      "aggressive_blink": 102.08225779106779,
+      "teleport_artifact": 123.33004238020912,
+      "summon": 137.95540907590618
     },
     "ok_low_ok_mid": {
-      "kill_minion": 102.45636364441548,
-      "move_artifact": 121.9277016562919,
-      "blink_artifact": 114.11680165266912,
+      "kill_minion": 154.9748727013997,
+      "move_artifact": 164.96430351811216,
+      "blink_artifact": 163.16153292011032,
       "proactive_shield": 38.37591484606236,
-      "teleport_artifact": 114.49446870072883,
-      "fireball": 114.93841682499941,
-      "heal": 41.04632711950276,
-      "idle": 47.712731726913525
+      "teleport_artifact": 168.8404286064303,
+      "fireball": 180.53786044136476,
+      "heal": 158.55170827283376,
+      "idle": 94.96403250296557,
+      "avoid_edge": 14.819358032191037
     },
     "ok_ok_low_mid": {
-      "aggressive_blink": 115.4407798449701,
-      "fireball": 131.45098620475642,
-      "kill_minion": 49.54238556137265,
-      "blink_artifact": 73.94841852583087,
-      "move_artifact": 88.42407061615431,
-      "summon": 45.17931994636497,
-      "heal": 101.961023296215,
-      "teleport_artifact": 32.837695727026144
+      "aggressive_blink": 138.1310232439439,
+      "fireball": 168.07970448339665,
+      "kill_minion": 83.13516527931672,
+      "blink_artifact": 112.63511545244363,
+      "move_artifact": 120.64788568045729,
+      "summon": 109.18167833130069,
+      "heal": 124.07672379226855,
+      "teleport_artifact": 56.743276211722744
     },
     "low_ok_low_close": {
-      "kill_minion": 58.46592980255724,
-      "proactive_shield": 63.46469540261559,
-      "fireball": 67.22104055357475,
-      "melee_opp": 76.06792051448483,
-      "blink_artifact": 70.98767911148714,
-      "move_artifact": 61.531047920948346,
-      "summon": 45.93538151544703,
-      "teleport_artifact": 64.35506821845348,
+      "kill_minion": 105.1126721410962,
+      "proactive_shield": 107.42095261824349,
+      "fireball": 114.11916397691112,
+      "melee_opp": 114.80587141845032,
+      "blink_artifact": 108.17879472166017,
+      "move_artifact": 116.73136294993749,
+      "summon": 60.08246726856493,
+      "teleport_artifact": 89.01762663125298,
       "heal": 17.448053628318167,
       "emergency_shield": 4.955907823006348,
       "explore_heal": 12.062347983583816,
-      "emergency_heal": 3.493666517321131
+      "emergency_heal": 10.984832687439468,
+      "heal_priority": 96.03636590599511
     },
     "ok_low_ok_far": {
-      "kill_minion": 70.01849407779879,
-      "blink_artifact": 112.7050638547947,
-      "move_artifact": 124.43790215486308,
-      "teleport_artifact": 102.17595064765803,
-      "hunt_blink": 53.84408188969124,
-      "hunt_move": 12.979989738927067,
-      "aggressive_blink": 8.783008610589667,
-      "aggressive_hunt": 18.18269166784839,
-      "heal": 56.05069868312778
+      "kill_minion": 125.3734930608837,
+      "blink_artifact": 158.0427484219104,
+      "move_artifact": 164.93827652744545,
+      "teleport_artifact": 162.64985695199556,
+      "hunt_blink": 89.10451056437306,
+      "hunt_move": 30.19191234050523,
+      "aggressive_blink": 36.04417480039804,
+      "aggressive_hunt": 31.376676741273286,
+      "heal": 139.658847671432
     },
     "low_ok_ok_close": {
-      "proactive_shield": 107.29263737376081,
-      "teleport_artifact": 87.701371543221,
-      "melee_opp": 92.84590911124639,
-      "kill_minion": 97.66172150479196,
-      "blink_artifact": 97.74604694692971,
-      "move_artifact": 111.74653302741585,
-      "summon": 67.4240085423806,
-      "fireball": 116.14248108409434,
-      "emergency_shield": 18.713360530152674,
+      "proactive_shield": 152.42259384251477,
+      "teleport_artifact": 137.2110844560831,
+      "melee_opp": 128.10119923521697,
+      "kill_minion": 136.60041984081857,
+      "blink_artifact": 129.57355897350135,
+      "move_artifact": 142.39828410833766,
+      "summon": 107.16379285641607,
+      "fireball": 162.4346561659234,
+      "emergency_shield": 32.054879731984116,
       "emergency_blink": -0.6572506754859793,
       "maintain_dist_back": 21.8689650447521,
-      "emergency_heal": 11.781962259488203
+      "emergency_heal": 63.17590740852651,
+      "heal_priority": 166.1413562841708
     },
     "low_ok_ok_mid": {
-      "kill_minion": 67.85610858958677,
-      "proactive_shield": 108.1245548158012,
-      "fireball": 128.79827301733974,
-      "heal": 125.49086087624372,
-      "summon": 59.380948997184085,
-      "blink_artifact": 55.485970396760656,
-      "teleport_artifact": 57.285914931850066,
-      "move_artifact": 90.44729023376419,
-      "emergency_heal": 14.926826991966715,
-      "emergency_teleport": 11.463094744207828,
-      "emergency_shield": 11.781962259488203
+      "kill_minion": 129.51080929502038,
+      "proactive_shield": 154.7001237548119,
+      "fireball": 175.2370650901829,
+      "heal": 125.17761072526662,
+      "summon": 67.8524068776841,
+      "blink_artifact": 71.53461878336272,
+      "teleport_artifact": 98.9278857249544,
+      "move_artifact": 106.40009563623967,
+      "emergency_heal": 47.104786205743295,
+      "emergency_teleport": 15.322953931165268,
+      "emergency_shield": 11.781962259488203,
+      "heal_priority": 163.51724488300934
     },
     "crit_low_low_close": {
-      "emergency_heal": 16.728287621551893,
+      "emergency_heal": 22.97247871417672,
       "emergency_flee": 2.057866513760645
     },
     "low_low_low_mid": {
-      "kill_minion": -1.81276875,
-      "fireball": 27.874061550124324,
+      "kill_minion": 30.148712229848623,
+      "fireball": 48.37706528000204,
       "heal": 43.926964196536794,
-      "move_artifact": 42.98405627917748,
+      "move_artifact": 61.77257836741429,
       "emergency_teleport": 3.9718744951866793,
       "emergency_flee": -2.25,
-      "proactive_shield": 4.863956074708605,
-      "blink_artifact": 9.177673769107145
+      "proactive_shield": 9.22616324057811,
+      "blink_artifact": 17.871030951254347,
+      "teleport_artifact": 14.20134945161258,
+      "heal_priority": 29.938710448424168
     },
     "crit_low_low_mid": {
       "emergency_teleport": 0.0
     },
     "low_low_ok_close": {
-      "move_artifact": 87.10564873680384,
-      "kill_minion": 37.48759191563357,
-      "fireball": 14.602241501355453,
-      "teleport_artifact": 80.51467528525217,
-      "proactive_shield": 37.526748683101886,
-      "blink_artifact": 62.440106253964025,
+      "move_artifact": 139.72646341892516,
+      "kill_minion": 104.11530544895278,
+      "fireball": 48.25423162581439,
+      "teleport_artifact": 105.38255591550862,
+      "proactive_shield": 89.4281137598072,
+      "blink_artifact": 103.09368677638332,
       "emergency_heal": 22.38100858355886,
-      "melee_opp": 44.332831827118625,
-      "emergency_shield": 7.648894152098956
+      "melee_opp": 90.32660802353516,
+      "emergency_shield": 7.648894152098956,
+      "heal_priority": 117.10386867627776
     },
     "low_ok_ok_far": {
       "heal": 93.57358051041602,
-      "kill_minion": 45.24435184489825,
+      "kill_minion": 57.07365079733743,
       "proactive_shield": 24.2505317813942,
-      "teleport_artifact": 21.85764694211469,
+      "teleport_artifact": 36.43551083210546,
       "move_artifact": 13.266080542761056,
-      "summon": 16.44227429010451,
-      "blink_artifact": 15.474831921785096
+      "summon": 19.804215522472283,
+      "blink_artifact": 15.474831921785096,
+      "heal_priority": 75.0406114458841
     },
     "low_low_ok_mid": {
-      "proactive_shield": 42.210540532515544,
-      "heal": 106.3041035480482,
-      "teleport_artifact": 44.03098054200975,
-      "blink_artifact": 32.307269318941266,
-      "kill_minion": 63.89071450113111,
-      "move_artifact": 82.92206948548134,
-      "fireball": 55.70832870485692,
-      "emergency_heal": 3.376197082333913
+      "proactive_shield": 97.58284791078427,
+      "heal": 107.93722389293858,
+      "teleport_artifact": 77.37468819896121,
+      "blink_artifact": 90.39450369747807,
+      "kill_minion": 77.56495354969546,
+      "move_artifact": 123.82622190239968,
+      "fireball": 79.5453111263996,
+      "emergency_heal": 23.76133305015602,
+      "heal_priority": 128.9214408846388,
+      "emergency_teleport": 9.863106762041335
     },
     "ok_ok_low_far": {
-      "aggressive_blink": 107.87389809256622,
-      "move_artifact": 105.55132778946438,
-      "heal": 89.12062446515404,
-      "aggressive_hunt": 112.7973963637201,
-      "summon": 72.3286672154422,
-      "blink_artifact": 83.64036584112586,
-      "teleport_artifact": 54.03607509204118,
-      "kill_minion": 15.156414208984927
+      "aggressive_blink": 148.77898646836496,
+      "move_artifact": 149.46186574774683,
+      "heal": 134.29656624794228,
+      "aggressive_hunt": 153.828723085259,
+      "summon": 129.7324741077676,
+      "blink_artifact": 142.08244304292282,
+      "teleport_artifact": 114.84053314982444,
+      "kill_minion": 26.335628654104557
     },
     "crit_ok_ok_close": {
-      "emergency_heal": 84.7527274884335,
-      "emergency_shield": 56.74751851835653,
+      "emergency_heal": 132.86206759160189,
+      "emergency_shield": 52.69155868623776,
       "emergency_blink": 10.17807129094679,
-      "emergency_flee": 3.965902632028278
+      "emergency_flee": 3.965902632028278,
+      "emergency_teleport": 15.178128505317517
     },
     "low_ok_low_far": {
       "heal": 34.47223448918062,
-      "kill_minion": 10.267648792102277,
+      "kill_minion": 13.189033846899946,
       "blink_artifact": 5.120695818133357,
-      "teleport_artifact": 13.549631270583319
+      "teleport_artifact": 27.133322637365758,
+      "heal_priority": 49.82096814672049,
+      "move_artifact": 26.82705615808088
     },
     "low_ok_low_mid": {
-      "kill_minion": 18.9191462684802,
-      "proactive_shield": 5.038979879527247,
+      "kill_minion": 41.30353624945337,
+      "proactive_shield": 25.89128427507495,
       "heal": 60.612963119532594,
-      "fireball": 22.872294510423195,
-      "summon": 12.857034808548217,
-      "teleport_artifact": 16.03699797457146,
-      "blink_artifact": 6.907747791075136,
-      "move_artifact": 6.907747791075136
+      "fireball": 39.19158381915898,
+      "summon": 16.45269108716706,
+      "teleport_artifact": 17.708160453586473,
+      "blink_artifact": 13.975204508323218,
+      "move_artifact": 6.907747791075136,
+      "heal_priority": 54.122958731652574
     },
     "ok_low_low_mid": {
-      "blink_artifact": 114.34644909115957,
-      "move_artifact": 118.60860782505084,
-      "fireball": 125.88396549640471,
-      "kill_minion": 71.03393117105223,
-      "teleport_artifact": 93.93172590915913,
-      "aggressive_blink": 5.430716575512893,
-      "heal": 80.50537214460212,
+      "blink_artifact": 147.04225584677667,
+      "move_artifact": 155.0278864095174,
+      "fireball": 160.0918186921256,
+      "kill_minion": 121.70271878579976,
+      "teleport_artifact": 122.66118895922638,
+      "aggressive_blink": 21.5506799459601,
+      "heal": 120.64094941917773,
       "aggressive_hunt": 8.36982846604484
     },
     "crit_ok_ok_far": {
       "emergency_flee": -2.25,
       "emergency_heal": 14.153165813595702,
-      "emergency_teleport": 8.889490148489521
+      "emergency_teleport": 20.236377070287844
     },
     "ok_low_low_far": {
-      "teleport_artifact": 81.04631743159129,
-      "move_artifact": 96.26711944235292,
-      "heal": 70.5846773614577,
-      "blink_artifact": 91.58035973714358,
-      "kill_minion": 6.156378412819664,
-      "aggressive_blink": 3.8695779862984256,
+      "teleport_artifact": 142.751255126436,
+      "move_artifact": 150.61378865707633,
+      "heal": 124.18142346236675,
+      "blink_artifact": 136.1316723688064,
+      "kill_minion": 17.689708203042816,
+      "aggressive_blink": 19.181061690261327,
       "aggressive_hunt": 5.430716575512893,
       "hunt_move": 9.015381994230408
     },
     "low_low_low_close": {
-      "melee_opp": 59.72215604103921,
-      "proactive_shield": 40.1046749226043,
-      "blink_artifact": 52.64594831123034,
-      "move_artifact": 69.00421004509448,
-      "fireball": 37.28515886849992,
-      "teleport_artifact": 42.84816533569132,
-      "kill_minion": 56.1318875617205,
+      "melee_opp": 77.40261027683583,
+      "proactive_shield": 64.05594540318647,
+      "blink_artifact": 77.93428954290312,
+      "move_artifact": 84.22471955043228,
+      "fireball": 67.02666908389835,
+      "teleport_artifact": 89.96358086877332,
+      "kill_minion": 84.05948750773508,
       "emergency_heal": 1.6065251815445145,
-      "heal": 12.873789279077782
+      "heal": 12.873789279077782,
+      "heal_priority": 42.25427011767657
     },
     "low_low_ok_far": {
       "heal": 52.69651222503393,
-      "blink_artifact": 32.10822441379583,
-      "move_artifact": 48.156628779946445,
+      "blink_artifact": 37.50664989229036,
+      "move_artifact": 48.34713456333002,
       "emergency_flee": -1.9550246945872503,
-      "kill_minion": 23.733415194866602,
-      "teleport_artifact": 21.415513278356208
+      "kill_minion": 34.09657964562499,
+      "teleport_artifact": 34.46000728504322,
+      "heal_priority": 58.30743035448881
     },
     "crit_low_ok_mid": {
       "emergency_flee": -2.853638928394797,
@@ -1399,12 +1508,12 @@
     },
     "crit_low_ok_far": {
       "emergency_flee": -7.1230872465860315,
-      "emergency_teleport": 2.8920323688933647,
-      "emergency_heal": 5.064552435976123,
+      "emergency_teleport": 15.711721938429733,
+      "emergency_heal": 19.1541662849081,
       "emergency_shield": -1.327328777642289
     },
     "crit_ok_low_close": {
-      "emergency_heal": 15.514024459013324,
+      "emergency_heal": 48.989037963083376,
       "emergency_shield": -0.2846930741837167,
       "emergency_blink": -1.5168853354315184,
       "emergency_flee": -0.018761483812798296
@@ -1412,28 +1521,31 @@
     "low_low_low_far": {
       "heal": 27.510159637240026,
       "blink_artifact": 5.607881582933764,
-      "move_artifact": 31.3542109019185
+      "move_artifact": 31.3542109019185,
+      "heal_priority": 19.980470659513003
     },
     "crit_ok_ok_mid": {
-      "emergency_shield": 1.802631947897047,
-      "emergency_heal": 43.70943531809151,
+      "emergency_shield": 4.274765108326035,
+      "emergency_heal": 69.82512994156272,
       "emergency_flee": -1.4294203495295787,
       "emergency_blink": 2.1665284223989723,
-      "emergency_teleport": 6.680383970702429
+      "emergency_teleport": 6.493478055049917
     },
     "crit_low_low_far": {
       "emergency_flee": -2.18679592205446
     },
     "crit_low_ok_close": {
-      "emergency_teleport": 9.845924663039915,
+      "emergency_teleport": 35.29194747171938,
       "emergency_shield": 2.955578193499587,
-      "emergency_heal": 20.11265650899407,
+      "emergency_heal": 70.77908345521666,
       "emergency_blink": 3.0204261335599383,
       "emergency_flee": 0.15721749374611066
     },
     "crit_ok_low_mid": {
       "emergency_blink": 0.5,
-      "emergency_teleport": 8.48460195390748
+      "emergency_teleport": 13.39437325487233,
+      "emergency_heal": 5.988445532341247,
+      "emergency_shield": -0.6939628143787895
     }
   }
 }
